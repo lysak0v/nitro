@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NITRO VPN — VLESS, высокая скорость и стабильность</title>
+  <meta name="description" content="NITRO VPN — быстрый VPN на VLESS. Пробный период 2 дня и 1 ГБ, сервера в Москве и Риге, 4 устройства, безлимитный трафик, стриминг и мессенджеры без блокировок." />
+  <meta name="keywords" content="NITRO VPN,VLESS VPN,VPN Москва,VPN Рига,быстрый VPN,VPN для КиноПоиск,VPN для YouTube,VPN для мессенджеров,безлимитный VPN" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://nitro-vpn.ru/" />
+  <link rel="alternate" hreflang="ru" href="https://nitro-vpn.ru/" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="color-scheme" content="dark light" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="NITRO VPN — быстрый VLESS VPN для стриминга и мессенджеров" />
+  <meta property="og:description" content="Пробный период 2 дня и 1 ГБ. Серверы Москва 🇷🇺 и Рига 🇱🇻, 4 устройства, безлимитный трафик, работает с КиноПоиск, YouTube, мессенджерами и Instagram." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NITRO VPN" />
+  <meta property="og:url" content="https://nitro-vpn.ru/" />
+  <meta property="og:image" content="https://nitro-vpn.ru/og-nitrovpn.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NITRO VPN — быстрый VLESS VPN" />
+  <meta name="twitter:description" content="Попробуйте бесплатно 2 дня и 1 ГБ. Москва и Рига, 4 устройства, безлимит, высокая скорость и стабильность." />
+  <meta name="twitter:image" content="https://nitro-vpn.ru/og-nitrovpn.png" />
+  <meta name="theme-color" content="#0b0f16" />
+  <style>
+  :root{
+    --bg:#0b0f16;
+    --card:#121826;
+    --surface:#0f1523;
+    --muted:#8a94a7;
+    --text:#f3f5f7;
+    --primary:#5eead4;
+    --primary-600:#2dd4bf;
+    --accent:#93c5fd;
+    --warning:#fde68a;
+    --ring:rgba(94,234,212,.35);
+    --shadow:0 16px 32px rgba(0,0,0,.35);
+    --radius:18px;
+    --radius-sm:12px;
+    --maxw:1180px;
+    --focus:0 0 0 3px var(--ring);
+    --transition:0.18s ease;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{height:100%;scroll-behavior:smooth}
+  body{
+    min-height:100%;
+    margin:0;
+    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+    background:radial-gradient(1200px 800px at 80% -10%,rgba(93,188,255,.08),transparent 60%),
+              radial-gradient(1000px 700px at -10% 20%,rgba(94,234,212,.08),transparent 60%),
+              var(--bg);
+    color:var(--text);
+    line-height:1.55;
+    letter-spacing:.1px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:flex;
+    flex-direction:column;
+  }
+  body.menu-open{overflow:hidden}
+  main{flex:1 0 auto}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible{outline:none;box-shadow:var(--focus);border-radius:12px}
+  .container{width:100%;max-width:var(--maxw);padding:0 clamp(16px,4vw,40px);margin:0 auto}
+  header{position:sticky;top:0;z-index:20;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,15,22,.65);border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(18px,5vw,40px);position:relative}
+  .brand{display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;letter-spacing:.6px}
+  .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#60a5fa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(94,234,212,.35)}
+  .logo svg{width:22px;height:22px}
+  .menu-toggle{display:none;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#141b2b;color:var(--text);font-weight:600;cursor:pointer;transition:background var(--transition),transform var(--transition)}
+  .menu-toggle:hover{transform:translateY(-1px);background:#171f30}
+  .menu-toggle svg{width:18px;height:18px}
+  .nav-links{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .hero{padding:clamp(56px,12vw,100px) 0 32px}
+  .hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,4vw,40px);align-items:center}
+  .hero-copy{grid-column:span 7}
+  .hero-card{grid-column:span 5;width:100%;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);display:grid;gap:16px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#111;background:linear-gradient(135deg,var(--warning),#fef3c7);padding:6px 12px;border-radius:999px;box-shadow:0 6px 18px rgba(253,230,138,.35)}
+  h1{font-size:clamp(30px,4.6vw,56px);line-height:1.15;margin:18px 0 14px}
+  .lead{font-size:clamp(16px,2.2vw,20px);color:var(--muted);margin:0 0 16px}
+  .hero-savings{margin:0 0 20px;font-weight:600;color:var(--primary);font-size:clamp(15px,2vw,18px)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;padding:12px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.08);background:#141b2b;color:var(--text);transition:transform var(--transition),box-shadow var(--transition),opacity var(--transition)}
+  .btn.primary{background:linear-gradient(135deg,var(--primary-600),var(--primary));color:#0b0f16;border-color:transparent;box-shadow:0 10px 26px rgba(94,234,212,.3)}
+  .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+  .btn[disabled]{opacity:.6;pointer-events:none}
+  .statline{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:24px}
+  .stat{background:var(--surface);padding:16px;border-radius:14px;border:1px dashed rgba(255,255,255,.08);text-align:center}
+  .stat .k{font-size:22px;font-weight:800;margin-bottom:4px;color:var(--primary)}
+  .muted{color:var(--muted)}
+  section{padding:clamp(48px,11vw,90px) 0}
+  .section-title{font-size:clamp(26px,3vw,34px);margin:0 0 18px}
+  .grid{display:grid;gap:clamp(18px,4vw,32px)}
+  .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;line-height:1.5}
+  .cta-card{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .cta-card .hero-cta{width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .cta-card .btn{width:100%;flex:1 1 auto}
+  .hero-card .card{background:var(--surface);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-sm)}
+  .hero-card .card b{display:block;margin-bottom:4px}
+  .hero-card-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+  .features{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .feature{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+  .feature-emoji{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.05);font-size:22px}
+  .feature h3{margin:0;font-size:18px}
+  .feature p{margin:0;color:var(--muted)}
+  .pricing{display:flex;flex-wrap:wrap;gap:clamp(18px,4vw,28px);justify-content:center}
+  .note{margin-top:18px;font-size:13px;color:var(--muted);line-height:1.4}
+  .plan{background:linear-gradient(180deg,#121826,#0f1523);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;flex:1 1 calc(25% - clamp(18px,4vw,28px));min-width:240px}
+  .plan-featured{border-color:rgba(94,234,212,.65);box-shadow:0 16px 38px rgba(45,212,191,.18)}
+  .plan-featured::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(94,234,212,.16),rgba(147,197,253,.08) 55%,transparent 90%);opacity:.65;pointer-events:none}
+  .plan > *{position:relative}
+  .plan h3{margin:0;font-size:20px}
+  .price{font-size:32px;font-weight:800}
+  .plan-payoff{color:var(--muted);font-size:14px}
+  .plan-savings{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--primary)}
+  .plan-savings svg{width:16px;height:16px}
+  .small{font-size:13px;color:var(--muted)}
+  .plan ul{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+  .plan li{display:flex;gap:10px;align-items:flex-start}
+  .plan li svg{flex:0 0 18px;margin-top:2px}
+  .plan .cta{margin-top:6px}
+  .badge{position:absolute;top:16px;right:-20px;padding:6px 20px;border-radius:999px;background:linear-gradient(135deg,#60a5fa,var(--accent));color:#0b0f16;font-weight:800;transform:rotate(10deg);box-shadow:0 10px 24px rgba(147,197,253,.35)}
+  .badge.accent{background:linear-gradient(135deg,var(--primary),var(--primary-600))}
+  .locations{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .referral-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  .ref-card{background:linear-gradient(180deg,#111827,#0e1523);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px;line-height:1.4}
+  .trial-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .protocol-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .payments-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .trial-grid ul,.trial-grid ol{margin:12px 0 0;padding-left:20px}
+  .trial-grid li{margin-bottom:6px}
+  .faq{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  details{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius-sm);padding:16px}
+  summary{cursor:pointer;font-weight:700;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  details[open] summary{color:var(--primary)}
+  details p{margin:10px 0 0;color:var(--muted)}
+  footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.06);color:var(--muted)}
+  .foot{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .support-link{color:var(--primary)}
+  @media (max-width:1200px){
+    body{
+      background:
+        radial-gradient(120vw 90vh at 85% -20%, rgba(93,188,255,.10), transparent 60%),
+        radial-gradient(130vw 110vh at -15% 32%, rgba(94,234,212,.10), transparent 65%),
+        var(--bg);
+    }
+  }
+
+  @media (max-width:720px){
+    body{
+      background:
+        radial-gradient(160vw 120vh at 70% -30%, rgba(93,188,255,.12), transparent 68%),
+        radial-gradient(170vw 130vh at -20% 38%, rgba(94,234,212,.12), transparent 70%),
+        var(--bg);
+    }
+  }
+
+  @media (min-width:1440px){
+    :root{--maxw:1320px}
+    body{font-size:18px}
+    h1{font-size:clamp(38px,4vw,62px)}
+  }
+  @media (min-width:1920px){
+    :root{--maxw:1480px}
+    body{font-size:19px}
+  }
+  @media (max-width:1180px){
+    .hero-copy{grid-column:span 12}
+    .hero-card{grid-column:span 12;width:100%;justify-self:start}
+  }
+  @media (max-width:1199px){
+    .menu-toggle{display:inline-flex;margin-left:auto}
+    .nav-links{margin-left:0;position:absolute;top:calc(100% + 12px);right:clamp(20px,6vw,44px);left:clamp(20px,6vw,44px);flex-direction:column;align-items:stretch;padding:20px;background:rgba(15,21,35,.96);border-radius:var(--radius);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity var(--transition),transform var(--transition);z-index:10}
+    .nav-links[data-open="true"]{opacity:1;pointer-events:auto;transform:translateY(0)}
+    .nav-links a.btn{width:100%}
+    .nav{align-items:flex-start}
+  }
+
+  @media (max-width:1024px){
+    .plan{flex:1 1 calc(50% - clamp(18px,4vw,28px))}
+  }
+  @media (max-width:720px){
+    .hero{padding:52px 0 24px}
+    .statline{grid-template-columns:repeat(auto-fit,minmax(100px,1fr))}
+    .hero-card{padding:20px}
+  }
+  @media (max-width:680px){
+    header{padding:10px 0}
+    .nav{padding:12px clamp(20px,7vw,36px)}
+    .brand{font-size:16px}
+    .hero-cta{flex-direction:column}
+    .btn{width:100%}
+    .hero-card-grid{grid-template-columns:1fr}
+    .plan{flex:1 1 100%;padding:20px}
+  }
+  @media (max-width:420px){
+    h1{font-size:28px}
+    .feature-emoji{width:38px;height:38px;font-size:20px}
+  }
+  @media (max-height:680px) and (orientation:landscape){
+    header{backdrop-filter:saturate(130%) blur(6px)}
+    .hero{padding:40px 0 20px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{scroll-behavior:auto !important}
+    .btn,.menu-toggle,.nav-links{transition:none}
+  }
+  </style>
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "NITRO VPN",
+  "serviceType": "VPN",
+  "url": "https://nitro-vpn.ru/",
+  "description": "NITRO VPN — быстрый VLESS VPN с серверами в Москве и Риге, пробным периодом 2 дня и 1 ГБ, безлимитным трафиком и подключением до 4 устройств.",
+  "provider": {
+    "@type": "Organization",
+    "name": "NITRO VPN",
+    "url": "https://nitro-vpn.ru/",
+    "sameAs": [
+      "https://t.me/nitro_vpn_sales_bot",
+      "https://t.me/nitro_vpn_help"
+    ]
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Москва",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RU"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Рига",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "LV"
+      }
+    }
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "1 месяц",
+      "price": "150",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock",
+      "url": "https://t.me/nitro_vpn_sales_bot"
+    },
+    {
+      "@type": "Offer",
+      "name": "3 месяца",
+      "price": "350",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock",
+      "url": "https://t.me/nitro_vpn_sales_bot"
+    },
+    {
+      "@type": "Offer",
+      "name": "6 месяцев",
+      "price": "600",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock",
+      "url": "https://t.me/nitro_vpn_sales_bot",
+      "priceValidUntil": "2026-12-31"
+    },
+    {
+      "@type": "Offer",
+      "name": "12 месяцев",
+      "price": "1000",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock",
+      "url": "https://t.me/nitro_vpn_sales_bot",
+      "priceValidUntil": "2026-12-31"
+    }
+  ],
+  "offersCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Гибкие тарифы",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPN доступ на 1 месяц"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPN доступ на 3 месяца"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPN доступ на 6 месяцев"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPN доступ на 12 месяцев"
+        }
+      }
+    ]
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://t.me/nitro_vpn_sales_bot",
+    "servicePhone": "",
+    "availableLanguage": [
+      "ru",
+      "en"
+    ],
+    "serviceLocation": {
+      "@type": "VirtualLocation",
+      "url": "https://nitro-vpn.ru/"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Приведи друга",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "+3 дня за 1 месяц"
+      },
+      {
+        "@type": "Offer",
+        "name": "+7 дней за 3 месяца"
+      },
+      {
+        "@type": "Offer",
+        "name": "+15 дней за 6 месяцев"
+      },
+      {
+        "@type": "Offer",
+        "name": "+30 дней за 12 месяцев"
+      }
+    ]
+  }
+}
+  </script>
+</head>
+<body>
+  <a href="#main" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;"
+     onfocus="this.style.left='10px';this.style.width='auto';this.style.height='auto';this.style.padding='10px 14px';this.style.background='#141b2b';this.style.borderRadius='12px';">
+    Перейти к содержимому
+  </a>
+
+  <header role="banner">
+    <div class="container nav">
+      <div class="brand" aria-label="NITRO VPN">
+        <div class="logo" aria-hidden="true">
+          🚀
+        </div>
+        <span>NITRO VPN</span>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Меню</span>
+      </button>
+      <nav id="main-menu" class="nav-links" aria-label="Основная навигация" data-open="false">
+        <a href="#features" class="btn">Преимущества</a>
+        <a href="#pricing" class="btn">Тарифы</a>
+        <a href="#trial" class="btn">Пробный период</a>
+        <a href="#protocol" class="btn">VLESS</a>
+        <a href="#faq" class="btn">FAQ</a>
+        <a href="#payments" class="btn">Оплата</a>
+        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" aria-label="Открыть Telegram-бота NITRO VPN">Открыть в Telegram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">VLESS • Пробный период 2 дня и 1 ГБ — без карты</span>
+      <h1>Безлимитный VPN: скорость, стабильность, невидимость</h1>
+      <p class="lead">Подключайте до <b>4 устройств</b> и смотрите любимые сервисы без блокировок. Серверы в <b>Москве 🇷🇺</b> и <b>Риге 🇱🇻</b>, шифрование TLS и маскировка трафика сохраняют приватность.</p>
+      <p class="hero-savings">Экономьте до 44% с тарифами на 6 и 12 месяцев.</p>
+      <div class="hero-cta">
+        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Попробовать бесплатно</a>
+        <a href="#pricing" class="btn">Сравнить тарифы</a>
+        <a href="#trial" class="btn">Как это работает</a>
+      </div>
+      <div class="statline" role="list" aria-label="Ключевые параметры сервиса">
+        <div class="stat" role="listitem"><div class="k">∞</div><div class="muted">Безлимит</div></div>
+        <div class="stat" role="listitem"><div class="k">4</div><div class="muted">Устройства</div></div>
+        <div class="stat" role="listitem"><div class="k">2 дня</div><div class="muted">Пробный период</div></div>
+      </div>
+    </div>
+    <div class="hero-card" aria-label="Сводка сети">
+      <h3 style="margin:0 0 8px">Статус сети</h3>
+      <div class="grid hero-card-grid">
+        <div class="card"><b>Москва 🇷🇺</b><span class="muted">Пинг ~28 мс</span></div>
+        <div class="card"><b>Рига 🇱🇻</b><span class="muted">Пинг ~60 мс</span></div>
+        <div class="card"><b>Надёжность</b><span class="muted">99% аптайм</span></div>
+        <div class="card"><b>Шифрование</b><span class="muted">TLS + AES-256</span></div>
+      </div>
+      <p class="small" style="margin-top:10px">Средние показатели по клиентам из РФ и Европы. Реальный пинг зависит от провайдера и загрузки сети.</p>
+    </div>
+  </div>
+</section>
+
+
+    
+<section id="features">
+  <div class="container">
+    <h2 class="section-title">Почему выбирают NITRO VPN</h2>
+    <p class="muted" style="margin-bottom:14px">Новым пользователям доступен пробный период — стриминг, мессенджеры и соцсети работают без ограничений.</p>
+    <div class="grid features">
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">🎬</span>
+        <h3>Работает КиноПоиск</h3>
+        <p>Смотрите кино и сериалы без региональных блокировок и замедлений.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">📺</span>
+        <h3>Работает YouTube</h3>
+        <p>Высокие скорости для 4K и прямых трансляций на любых устройствах.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">📞</span>
+        <h3>Мессенджеры*¹</h3>
+        <p>Звонки и сообщения в Telegram, WhatsApp, Viber и др. проходят стабильно.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">📸</span>
+        <h3>Instagram*²</h3>
+        <p>Публикуйте и смотрите контент без ограничений.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">🥷</span>
+        <h3>Скрытный трафик</h3>
+        <p>VLESS поверх TLS выглядит как обычный HTTPS — помогает обходить DPI.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">📱</span>
+        <h3>До 4 устройств</h3>
+        <p>Подключайте смартфон, планшет и ПК одновременно.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">🔋</span>
+        <h3>Безлимитный трафик</h3>
+        <p>Никаких скрытых ограничений или резкого снижения скорости.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">🚀</span>
+        <h3>Высокая скорость</h3>
+        <p>Оптимизированные узлы в Москве и Риге обеспечивают низкий пинг.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-emoji" aria-hidden="true">✅</span>
+        <h3>Стабильность и поддержка</h3>
+        <p>99% аптайм и живой чат @nitro_vpn_help отвечает за пару минут.</p>
+      </div>
+    </div>
+    <p class="note">*¹ Для голосовых звонков VPN должен быть включён у обоих абонентов.<br>*² Instagram принадлежит Meta, признанной в России экстремистской организацией.</p>
+  </div>
+</section>
+
+
+    
+<section id="protocol">
+  <div class="container">
+    <h2 class="section-title">VLESS — современный стандарт приватности</h2>
+    <div class="grid protocol-grid">
+      <div class="card">
+        <h3 style="margin-top:0">Лёгкий и быстрый</h3>
+        <p class="muted">Минимальные накладные расходы и современные транспорты дают низкий пинг и высокую скорость.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Поверх TLS</h3>
+        <p class="muted">Трафик шифруется TLS 1.3 — выглядит как обычный HTTPS и устойчив к блокировкам.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Проходит DPI</h3>
+        <p class="muted">Гибкая маскировка, XTLS и HTTP/2 помогают обходить DPI и оставаться невидимым.</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:10px">VLESS доступен на всех серверах NITRO VPN: Москва и Рига.</p>
+  </div>
+</section>
+
+
+    <section id="pricing">
+  <div class="container">
+    <h2 class="section-title">Тарифы и подписки</h2>
+    <p class="muted" style="margin-bottom:14px">Гибкие тарифы на 1, 3, 6 и 12 месяцев. Любой план включает одинаковый набор функций — отличается только срок действия и стоимость подписки.</p>
+    <div class="pricing">
+      <div class="plan" data-plan="1m">
+        <h3>1 месяц</h3>
+        <div class="price">150 ₽</div>
+        <div class="plan-payoff">за 30 дней</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+        </ul>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+      </div>
+      <div class="plan" data-plan="3m">
+        <h3>3 месяца</h3>
+        <div class="price">350 ₽</div>
+        <div class="plan-payoff">за 3 месяца (~117 ₽/мес)</div>
+        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 22% vs 1 месяц</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+        </ul>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+      </div>
+      <div class="plan plan-featured" data-plan="6m">
+        <span class="badge">33% выгоды</span>
+        <h3>6 месяцев</h3>
+        <div class="price">600 ₽</div>
+        <div class="plan-payoff">за 6 месяцев (~100 ₽/мес)</div>
+        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 33% vs 1 месяц</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+        </ul>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+      </div>
+      <div class="plan plan-featured" data-plan="12m">
+        <span class="badge accent">Максимальная выгода</span>
+        <h3>12 месяцев</h3>
+        <div class="price">1000 ₽</div>
+        <div class="plan-payoff">за 12 месяцев (~84 ₽/мес)</div>
+        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 44% vs 1 месяц</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+        </ul>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:10px">Оплата картами банков РФ, по СБП или через Telegram Stars. Telegram-бот напомнит о продлении за несколько дней до окончания подписки.</p>
+  </div>
+</section>
+
+
+
+    
+<section id="trial">
+  <div class="container">
+    <h2 class="section-title">Пробный период — бесплатно</h2>
+    <div class="grid trial-grid">
+      <div class="card">
+        <p><b>Новые пользователи</b> получают <b>2 дня</b> и <b>1 ГБ</b> трафика бесплатно. Активация занимает меньше минуты в Telegram — без банковской карты.</p>
+        <ul>
+          <li>Доступ ко всем серверам (Москва 🇷🇺 и Рига 🇱🇻)</li>
+          <li>Полная скорость для 4 устройств</li>
+          <li>Переход на любой тариф прямо в боте</li>
+        </ul>
+        <div class="hero-cta">
+          <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Активировать в Telegram</a>
+          <a href="#faq" class="btn">FAQ о тест-драйве</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Как это работает</h3>
+        <ol>
+          <li>Откройте бота <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a>.</li>
+          <li>Нажмите "Старт" либо отправьте в чат /start</li>
+          <li>Выберите «Пробный период» и следуйте подсказкам.</li>
+          <li>Получите ссылку на подписку и подключите устройства.</li>
+        </ol>
+        <p class="small" style="margin-top:12px">Пробный период доступен один раз на пользователя, продлить можно любым платным тарифом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="referral">
+      <div class="container">
+        <h2 class="section-title">Реферальная программа «Приведи друга»</h2>
+        <p class="muted" style="margin-bottom:14px">Если ваш друг оплачивает подписку — вы оба получаете дни в подарок к своей подписке.</p>
+        <div class="grid referral-grid">
+          <div class="ref-card"><b>1 месяц</b><br><span class="muted">+3 дня каждому</span></div>
+          <div class="ref-card"><b>3 месяца</b><br><span class="muted">+7 дней каждому</span></div>
+          <div class="ref-card"><b>6 месяцев</b><br><span class="muted">+15 дней каждому</span></div>
+          <div class="ref-card"><b>12 месяцев</b><br><span class="muted">+30 дней каждому</span></div>
+        </div>
+        <div class="hero-cta" style="margin-top:14px">
+          <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Получить реферальную ссылку</a>
+          <a href="#faq" class="btn">Условия программы</a>
+        </div>
+      </div>
+    </section>
+
+    
+<section id="payments">
+  <div class="container">
+    <h2 class="section-title">Оплата и быстрый доступ</h2>
+    <p class="muted" style="margin-bottom:14px">Принимаем карты банков РФ, СБП и платежи через Telegram Stars — доступ выдаётся сразу после оплаты.</p>
+    <div class="grid payments-grid">
+      <div class="card"><h3 style="margin-top:0">Карты банков РФ</h3><p class="muted">Оплата привычными картами с автоматическим подтверждением.</p></div>
+      <div class="card"><h3 style="margin-top:0">СБП</h3><p class="muted">Мгновенное зачисление перевода по QR или номеру телефона.</p></div>
+      <div class="card"><h3 style="margin-top:0">Telegram Stars</h3><p class="muted">Оплата внутри бота и моментальная выдача конфигов.</p></div>
+    </div>
+    <div class="hero-cta" style="margin-top:14px">
+      <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Перейти в Telegram-бота</a>
+      <a href="#pricing" class="btn">Сравнить тарифы</a>
+    </div>
+  </div>
+</section>
+
+
+    <section id="locations">
+      <div class="container">
+        <h2 class="section-title">Доступные локации</h2>
+        <div class="grid locations">
+          <div class="card"><h3 style="margin-top:0">Москва 🇷🇺</h3><p class="muted">Быстрые узлы для пользователей РФ и близлежащих регионов.</p></div>
+          <div class="card"><h3 style="margin-top:0">Рига 🇱🇻</h3><p class="muted">Отличный выбор для ЕС и стран Балтии.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="grid faq">
+          <details>
+            <summary>Сколько устройств можно подключить?</summary>
+            <p>Любая подписка включает до <b>4 устройств</b> одновременно.</p>
+          </details>
+          <details>
+            <summary>Есть ли ограничения по скорости?</summary>
+            <p>Максимально возможная скорость на 1 сервер - 2 Гбит/сек, делится в равных пропорциях между всеми пользователями и искусственно не ограничивается. Реальная скорость зависит от вашего провайдера и расстояния до сервера.</p>
+          </details>
+          <details>
+            <summary>Как работает пробный период?</summary>
+            <p>2 дня и 1 ГБ трафика бесплатно. После исчерпания лимита можно перейти на любой тариф.</p>
+          </details>
+          <details>
+            <summary>Где доступен сервис?</summary>
+            <p>Сейчас доступны <b>Москва</b> и <b>Рига</b>. Мы добавляем новые локации по мере роста.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    
+<section id="cta">
+  <div class="container">
+    <div class="card cta-card">
+      <div>
+        <h3 style="margin:0 0 6px">Готовы начать?</h3>
+        <p class="muted" style="margin:0">Покупка, продление, пробный период и рефералы доступны в нашем Telegram-боте. Поддержка: <a class="support-link" href="https://t.me/nitro_vpn_help" target="_blank" rel="noopener">@nitro_vpn_help</a></p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn primary" href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">Открыть @nitro_vpn_sales_bot</a>
+        <a class="btn" href="#payments">Способы оплаты</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container foot">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          🚀
+        </div>
+        <span>NITRO VPN</span>
+      </div>
+      <div style="display:flex; gap:16px; align-items:center">
+        <a href="#privacy">Политика конфиденциальности</a>
+        <a href="#tos">Пользовательское соглашение</a>
+      </div>
+      <div>© <span id="year"></span> NITRO VPN</div>
+    </div>
+  </footer>
+
+  
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('main-menu');
+  if (menuToggle && menu) {
+    const mq = window.matchMedia('(max-width: 1199px)');
+    const setMenuState = (open) => {
+      menu.dataset.open = String(open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('menu-open', open);
+    };
+    menuToggle.addEventListener('click', () => {
+      const open = menu.dataset.open !== 'true';
+      setMenuState(open);
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (mq.matches) setMenuState(false);
+      });
+    });
+    window.matchMedia('(min-width: 1200px)').addEventListener('change', e => {
+      if (e.matches) setMenuState(false);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') setMenuState(false);
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (window.location.hash !== '#' + id) {
+          history.replaceState(null, '', '#' + id);
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-select]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.currentTarget.closest('.plan');
+      if (!card) return;
+      const plan = card.dataset.plan || '';
+      const prices = {
+        '1m': '150 ₽ за 30 дней',
+        '3m': '350 ₽ за 3 мес (~117 ₽/мес)',
+        '6m': '600 ₽ за 6 мес (~100 ₽/мес)',
+        '12m': '1000 ₽ за 12 мес (~84 ₽/мес)'
+      };
+      toast(`Выбран тариф: ${card.querySelector('h3').textContent} — ${prices[plan] || ''}. Оплата в Telegram.`);
+    });
+  });
+
+  const toast = (msg) => {
+    const t = document.createElement('div');
+    t.textContent = msg;
+    t.setAttribute('role', 'status');
+    t.setAttribute('aria-live', 'polite');
+    t.style.position = 'fixed';
+    t.style.left = '50%';
+    t.style.top = '16px';
+    t.style.transform = 'translateX(-50%)';
+    t.style.background = 'linear-gradient(135deg, var(--primary-600), var(--primary))';
+    t.style.color = '#0b0f16';
+    t.style.padding = '10px 14px';
+    t.style.borderRadius = '12px';
+    t.style.fontWeight = '800';
+    t.style.boxShadow = 'var(--shadow)';
+    t.style.zIndex = '50';
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 3200);
+  };
+</script>
+
+</body>
+</html>
