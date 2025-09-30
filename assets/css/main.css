@@ -39,6 +39,11 @@
   a:focus-visible,button:focus-visible{outline:none;box-shadow:var(--focus);border-radius:12px}
   .skip-link{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;z-index:100}
   .skip-link:focus,.skip-link:focus-visible{left:16px;top:16px;width:auto;height:auto;padding:12px 18px;border-radius:14px;background:#141b2b;color:var(--text);box-shadow:var(--shadow)}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .lang-switch{display:flex;align-items:center;gap:6px;margin-left:12px;height:44px;flex:0 0 auto}
+  .lang-icon{font-size:18px;line-height:1;display:flex;align-items:center;justify-content:center}
+  .lang-select{background:#141b2b;color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:0 32px 0 12px;font-weight:600;min-width:130px;box-shadow:0 4px 12px rgba(0,0,0,.2);height:44px;line-height:44px;appearance:none;-webkit-appearance:none;-moz-appearance:none;background-position:right 10px center;background-repeat:no-repeat;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 4.5l3 3 3-3'/%3E%3C/svg%3E")}
+  .lang-select:focus-visible{outline:none;box-shadow:var(--focus)}
   .section-subheading{margin:0 0 8px;font-size:20px;font-weight:700}
   .card-title{margin:0 0 10px;font-size:18px;font-weight:700}
   .top-gap-sm{margin-top:10px}
@@ -49,14 +54,20 @@
   .no-margin{margin:0}
   .container{width:100%;max-width:var(--maxw);padding:0 clamp(16px,4vw,40px);margin:0 auto}
   header{position:sticky;top:0;z-index:20;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,15,22,.65);border-bottom:1px solid rgba(255,255,255,.06)}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(18px,5vw,40px);position:relative}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px clamp(18px,4vw,36px);position:relative;flex-wrap:nowrap;min-width:0}
   .brand{display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;letter-spacing:.6px}
-  .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#60a5fa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(94,234,212,.35)}
+  .brand span{white-space:nowrap}
+  .logo{width:40px;height:40px;min-width:40px;min-height:40px;flex:0 0 40px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#60a5fa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(94,234,212,.35)}
   .logo svg{width:22px;height:22px}
   .menu-toggle{display:none;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#141b2b;color:var(--text);font-weight:600;cursor:pointer;transition:background var(--transition),transform var(--transition)}
   .menu-toggle:hover{transform:translateY(-1px);background:#171f30}
   .menu-toggle svg{width:18px;height:18px}
-  .nav-links{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .nav-links{display:flex;align-items:center;gap:8px;margin-left:auto;max-width:100%;justify-content:flex-end;flex-wrap:nowrap;min-width:0}
+  .nav-links .btn{position:relative;display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;overflow:hidden;white-space:nowrap;flex:0 0 auto;font-size:clamp(14px,1vw,15px)}
+  .nav-links .btn::after{content:attr(data-tooltip);position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%) scale(.95);opacity:0;pointer-events:none;background:rgba(15,21,35,.95);color:var(--text);padding:6px 10px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.4);font-size:13px;line-height:1.3;max-width:220px;text-align:center;white-space:normal;transition:opacity var(--transition),transform var(--transition),visibility var(--transition);visibility:hidden;z-index:25}
+  .nav-links .btn:hover::after,.nav-links .btn:focus-visible::after{opacity:1;transform:translateX(-50%) scale(1);visibility:visible}
+  .nav-links .btn-label{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .nav-links .btn.primary{padding:0 20px}
   .hero{padding:clamp(56px,12vw,100px) 0 32px}
   .hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,4vw,40px);align-items:center}
   .hero-copy{grid-column:span 7}
@@ -124,6 +135,12 @@
   footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.06);color:var(--muted)}
   .foot{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
   .support-link{color:var(--primary)}
+  html[dir="rtl"] body{direction:rtl;text-align:right}
+  html[dir="rtl"] .hero-cta,html[dir="rtl"] .statline,html[dir="rtl"] .grid,html[dir="rtl"] .pricing{direction:rtl}
+  html[dir="rtl"] .lang-switch{margin-left:0;margin-right:16px}
+  html[dir="rtl"] .nav-links{justify-content:flex-start}
+  html[dir="rtl"] .nav-links .btn::after{left:auto;right:50%;transform:translateX(50%) scale(.95);text-align:right}
+  html[dir="rtl"] .nav-links .btn:hover::after,html[dir="rtl"] .nav-links .btn:focus-visible::after{transform:translateX(50%) scale(1)}
   @media (max-width:1200px){
     body{
       background:
@@ -155,12 +172,14 @@
     .hero-copy{grid-column:span 12}
     .hero-card{grid-column:span 12;width:100%;justify-self:start}
   }
-  @media (max-width:1199px){
+  @media (max-width:1400px){
     .menu-toggle{display:inline-flex;margin-left:auto}
     .nav-links{margin-left:0;position:absolute;top:calc(100% + 12px);right:clamp(20px,6vw,44px);left:clamp(20px,6vw,44px);flex-direction:column;align-items:stretch;padding:20px;background:rgba(15,21,35,.96);border-radius:var(--radius);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity var(--transition),transform var(--transition);z-index:10}
     .nav-links[data-open="true"]{opacity:1;pointer-events:auto;transform:translateY(0)}
     .nav-links a.btn{width:100%}
     .nav{align-items:flex-start}
+    .lang-switch{width:100%;margin:8px 0 0}
+    .lang-select{width:100%}
   }
 
   @media (max-width:1024px){
@@ -192,3 +211,4 @@
     *{scroll-behavior:auto !important}
     .btn,.menu-toggle,.nav-links{transition:none}
   }
+  html[dir="rtl"] .lang-select{text-align:right;direction:rtl}

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NITRO — быстрый VPN для России и не только</title>
-  <meta name="description" content="NITRO VPN — быстрый VLESS VPN-сервис с серверами в Москве и Риге. Подключите безлимитный трафик, до 4 устройств, пробный период 2 дня и 1 ГБ, доступ к YouTube, КиноПоиск, Telegram и Instagram без блокировок." />
-  <meta name="keywords" content="nitro vpn,vless vpn,впн,впн россия,vpn russia,vpn латвия,vpn latvia,vpn москва,vpn moscow,vpn рига,vpn riga,быстрый vpn,stable vpn,vpn безлимит,vpn для youtube,vpn для instagram,vpn для facebook,vpn для tiktok,vpn для telegram,vpn для whatsapp,vpn для twitter,vpn для discord,vpn для viber,vpn для facetime,vpn для кинопоиск,vless protocol,обход dpi,secure vpn" />
+  <title data-i18n="meta.title">NITRO VPN — VLESS VPN для YouTube, Telegram, Instagram и КиноПоиск в России</title>
+  <meta name="description" content="Запускайте YouTube, Instagram, TikTok, Telegram, WhatsApp и КиноПоиск без блокировок. Серверы в Москве и Риге, VLESS поверх TLS, пробный период 2 дня и 1 ГБ, безлимитный трафик, до 4 устройств." data-i18n-content="meta.description" />
+  <meta name="keywords" content="nitro vpn,vless vpn,впн,впн россия,vpn russia,vpn латвия,vpn latvia,vpn москва,vpn moscow,vpn рига,vpn riga,быстрый vpn,stable vpn,vpn безлимит,vpn для youtube,vpn для instagram,vpn для facebook,vpn для tiktok,vpn для telegram,vpn для whatsapp,vpn для twitter,vpn для discord,vpn для viber,vpn для facetime,vpn для кинопоиск,vless protocol,обход dpi,secure vpn" data-i18n-content="meta.keywords" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
   <link rel="canonical" href="https://nitrovpn.org/" />
-  <link rel="alternate" hreflang="ru" href="https://nitrovpn.org/" />
+  <link rel="alternate" hreflang="ru" href="https://nitrovpn.org/" data-i18n-attr="hreflang" data-i18n-attr-key="meta.hreflang" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
@@ -19,23 +19,23 @@
   <meta name="color-scheme" content="dark light" />
   <meta name="application-name" content="NITRO VPN" />
   <meta name="author" content="NITRO VPN" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:title" content="NITRO VPN — быстрый VLESS VPN для России и Европы" />
-  <meta property="og:description" content="VPN на VLESS с серверами в Москве и Риге: пробный доступ 2 дня и 1 ГБ, безлимитный трафик, поддержка стриминга и мессенджеров." />
+  <meta property="og:locale" content="ru_RU" data-i18n-content="meta.ogLocale" />
+  <meta property="og:title" content="NITRO VPN — VLESS VPN для YouTube и Telegram" data-i18n-content="meta.ogTitle" />
+  <meta property="og:description" content="Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp. Серверы в Москве и Риге, VLESS поверх TLS, пробный период 2 дня и 1 ГБ." data-i18n-content="meta.ogDescription" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="NITRO VPN" />
   <meta property="og:url" content="https://nitrovpn.org/" />
   <meta property="og:image" content="https://nitrovpn.org/og-nitrovpn.png" />
-  <meta property="og:image:alt" content="Логотип NITRO VPN и интерфейс приложения" />
+  <meta property="og:image:alt" content="Логотип NITRO VPN и интерфейс приложения" data-i18n-content="meta.ogImageAlt" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="NITRO VPN — быстрый VLESS VPN для России и Европы" />
-  <meta name="twitter:description" content="Протестируйте 2 дня и 1 ГБ бесплатно. VPN для YouTube, КиноПоиск, Telegram и Instagram с высокой скоростью и безлимитом." />
+  <meta name="twitter:title" content="NITRO VPN — VLESS VPN без блокировок" data-i18n-content="meta.twitterTitle" />
+  <meta name="twitter:description" content="Тест 2 дня и 1 ГБ бесплатно. YouTube, Telegram, Instagram и КиноПоиск работают без ограничений, серверы в Москве и Риге." data-i18n-content="meta.twitterDescription" />
   <meta name="twitter:image" content="https://nitrovpn.org/og-nitrovpn.png" />
-  <meta name="twitter:image:alt" content="Логотип NITRO VPN и интерфейс приложения" />
+  <meta name="twitter:image:alt" content="Логотип NITRO VPN и интерфейс приложения" data-i18n-content="meta.twitterImageAlt" />
   <meta name="theme-color" content="#0b0f16" />
   <link rel="stylesheet" href="assets/css/main.css" />
 
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="service-schema">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -179,34 +179,56 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">
-    Перейти к содержимому
-  </a>
+  <a class="skip-link" href="#main" data-i18n="skip.link">Перейти к содержимому</a>
 
   <header role="banner">
     <div class="container nav">
-      <div class="brand" aria-label="NITRO VPN">
+      <div class="brand" aria-label="NITRO VPN" data-i18n-attr="aria-label" data-i18n-attr-key="brand.aria">
         <div class="logo" aria-hidden="true">
           🚀
         </div>
-        <span>NITRO VPN</span>
+        <span data-i18n="brand.name">NITRO VPN</span>
       </div>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню" data-i18n-attr="aria-label" data-i18n-attr-key="menu.toggleLabel">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           <path d="M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <span>Меню</span>
+        <span data-i18n="nav.menu">Меню</span>
       </button>
       <nav id="main-menu" class="nav-links" aria-label="Основная навигация" data-open="false">
-        <a href="#features" class="btn">Преимущества</a>
-        <a href="#pricing" class="btn">Тарифы</a>
-        <a href="#trial" class="btn">Пробный период</a>
-        <a href="#protocol" class="btn">VLESS</a>
-        <a href="#faq" class="btn">FAQ</a>
-        <a href="#payments" class="btn">Оплата</a>
-        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" aria-label="Открыть Telegram-бота NITRO VPN">Открыть в Telegram</a>
+        <a href="#features" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.features" data-i18n-tooltip="nav.features">
+          <span class="btn-label" data-i18n="nav.features">Преимущества</span>
+        </a>
+        <a href="#pricing" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.pricing" data-i18n-tooltip="nav.pricing">
+          <span class="btn-label" data-i18n="nav.pricing">Тарифы</span>
+        </a>
+        <a href="#trial" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.trial" data-i18n-tooltip="nav.trial">
+          <span class="btn-label" data-i18n="nav.trial">Пробный период</span>
+        </a>
+        <a href="#protocol" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.protocol" data-i18n-tooltip="nav.protocol">
+          <span class="btn-label" data-i18n="nav.protocol">VLESS</span>
+        </a>
+        <a href="#faq" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.faq" data-i18n-tooltip="nav.faq">
+          <span class="btn-label" data-i18n="nav.faq">FAQ</span>
+        </a>
+        <a href="#payments" class="btn" data-i18n-attr="data-tooltip" data-i18n-attr-key="nav.payments" data-i18n-tooltip="nav.payments">
+          <span class="btn-label" data-i18n="nav.payments">Оплата</span>
+        </a>
+        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" aria-label="Открыть Telegram-бота NITRO VPN" data-i18n-attr="aria-label" data-i18n-attr-key="nav.telegramAria" data-i18n-tooltip="nav.telegram">
+          <span class="btn-label" data-i18n="nav.telegram">Открыть в Telegram</span>
+        </a>
+        <div class="lang-switch">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <label for="language-switch" class="sr-only" data-i18n="lang.label">Выбрать язык</label>
+          <select id="language-switch" class="lang-select" aria-label="Выбрать язык" data-i18n-attr="aria-label" data-i18n-attr-key="lang.label">
+            <option value="ru" data-i18n="lang.option.ru">🇷🇺 Русский</option>
+            <option value="en" data-i18n="lang.option.en">🇺🇸 English</option>
+            <option value="fa" data-i18n="lang.option.fa">🇮🇷 فارسی</option>
+            <option value="zh" data-i18n="lang.option.zh">🇨🇳 简体中文</option>
+          </select>
+        </div>
       </nav>
     </div>
   </header>
@@ -216,30 +238,30 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Пробный период 2 дня и 1 ГБ — без карты</span>
-      <h1>NITRO VPN - для YouTube, Telegram, WhatsApp, Instagram в России и не только</h1>
-      <p class="lead">Используйте YouTube, Instagram, TikTok, Telegram, WhatsApp и КиноПоиск и т.д. без блокировок. Серверы в <b>Москве</b> и <b>Риге</b>, VLESS поверх TLS и продвинутый обход DPI дают стабильный и быстрый интернет.</p>
-      <p class="hero-savings">Экономьте до 44% на подписке и получайте стабильный доступ к контенту из РФ и ЕС.</p>
+      <span class="eyebrow" data-i18n="hero.eyebrow">Пробный период 2 дня и 1 ГБ — без карты</span>
+      <h1 data-i18n="hero.heading">NITRO VPN — VLESS VPN для YouTube, Telegram, Instagram и КиноПоиск в России</h1>
+      <p class="lead" data-i18n-html="hero.lead">Запускайте YouTube, Instagram, TikTok, Telegram, WhatsApp и КиноПоиск без блокировок. Серверы в <b>Москве</b> и <b>Риге</b>, VLESS поверх TLS и продвинутый обход DPI дают стабильный и быстрый интернет.</p>
+      <p class="hero-savings" data-i18n="hero.savings">Экономьте до 44% на подписке и получайте стабильный доступ к контенту из РФ и ЕС.</p>
       <div class="hero-cta">
-        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Попробовать бесплатно</a>
-        <a href="#pricing" class="btn">Сравнить тарифы</a>
-        <a href="#trial" class="btn">Как это работает</a>
+        <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-i18n="hero.ctaPrimary">Попробовать бесплатно</a>
+        <a href="#pricing" class="btn" data-i18n="hero.ctaPricing">Сравнить тарифы</a>
+        <a href="#trial" class="btn" data-i18n="hero.ctaTrial">Как это работает</a>
       </div>
-      <div class="statline" role="list" aria-label="Ключевые параметры сервиса">
-        <div class="stat" role="listitem"><div class="k">∞</div><div class="muted">Безлимит</div></div>
-        <div class="stat" role="listitem"><div class="k">4</div><div class="muted">Устройства</div></div>
-        <div class="stat" role="listitem"><div class="k">2 дня</div><div class="muted">Пробный период</div></div>
+      <div class="statline" role="list" aria-label="Ключевые параметры сервиса" data-i18n-attr="aria-label" data-i18n-attr-key="hero.statAria">
+        <div class="stat" role="listitem"><div class="k" data-i18n="hero.statUnlimited">∞</div><div class="muted" data-i18n="hero.statUnlimitedLabel">Безлимит</div></div>
+        <div class="stat" role="listitem"><div class="k" data-i18n="hero.statDevicesValue">4</div><div class="muted" data-i18n="hero.statDevicesLabel">Устройства</div></div>
+        <div class="stat" role="listitem"><div class="k" data-i18n="hero.statTrialValue">2 дня</div><div class="muted" data-i18n="hero.statTrialLabel">Пробный период</div></div>
       </div>
     </div>
-    <div class="hero-card" aria-label="Сводка сети">
-      <h3 class="section-subheading">Онлайн-статус сети NITRO VPN</h3>
+    <div class="hero-card" aria-label="Сводка сети" data-i18n-attr="aria-label" data-i18n-attr-key="hero.statusAria">
+      <h3 class="section-subheading" data-i18n="hero.statusHeading">Онлайн-статус сети NITRO VPN</h3>
       <div class="grid hero-card-grid">
-        <div class="card"><b>Москва 🇷🇺</b><span class="muted">Пинг ~28 мс</span></div>
-        <div class="card"><b>Рига 🇱🇻</b><span class="muted">Пинг ~60 мс</span></div>
-        <div class="card"><b>Надёжность</b><span class="muted">99% аптайм</span></div>
-        <div class="card"><b>Шифрование</b><span class="muted">TLS + AES-256</span></div>
+        <div class="card"><b data-i18n="hero.statusMoscow">Москва 🇷🇺</b><span class="muted" data-i18n="hero.statusMoscowPing">Пинг ~28 мс</span></div>
+        <div class="card"><b data-i18n="hero.statusRiga">Рига 🇱🇻</b><span class="muted" data-i18n="hero.statusRigaPing">Пинг ~60 мс</span></div>
+        <div class="card"><b data-i18n="hero.statusUptime">Надёжность</b><span class="muted" data-i18n="hero.statusUptimeValue">99% аптайм</span></div>
+        <div class="card"><b data-i18n="hero.statusEncryption">Шифрование</b><span class="muted" data-i18n="hero.statusEncryptionValue">TLS + AES-256</span></div>
       </div>
-      <p class="small top-gap-sm">Средние показатели по клиентам из России и Европы. Реальный пинг зависит от провайдера и загрузки сети.</p>
+      <p class="small top-gap-sm" data-i18n="hero.statusNote">Средние показатели по клиентам из России и Европы. Реальный пинг зависит от провайдера и загрузки сети.</p>
     </div>
   </div>
 </section>
@@ -248,56 +270,56 @@
     
 <section id="features">
   <div class="container">
-    <h2 class="section-title">Почему выбирают NITRO VPN</h2>
-    <p class="muted bottom-gap-md">Надёжный доступ к стримингам, мессенджерам и соцсетям без блокировок, пробный период 2 дня и 1 ГБ для каждого нового пользователя.</p>
+    <h2 class="section-title" data-i18n="features.heading">Почему выбирают NITRO VPN</h2>
+    <p class="muted bottom-gap-md" data-i18n="features.subheading">Надёжный доступ к стримингам, мессенджерам и соцсетям без блокировок, пробный период 2 дня и 1 ГБ для каждого нового пользователя.</p>
     <div class="grid features">
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">🎬</span>
-        <h3>КиноПоиск</h3>
-        <p>Смотрите кино, сериалы, ТВ-каналы и спорт без региональных блокировок даже находясь не в России.</p>
+        <h3 data-i18n="features.cardCinemaTitle">КиноПоиск</h3>
+        <p data-i18n="features.cardCinemaText">Смотрите кино, сериалы, ТВ-каналы и спорт без региональных блокировок даже находясь не в России.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">📺</span>
-        <h3>YouTube</h3>
-        <p>Высокие скорости для 4K и прямых трансляций на любых устройствах.</p>
+        <h3 data-i18n="features.cardYoutubeTitle">YouTube</h3>
+        <p data-i18n="features.cardYoutubeText">Высокие скорости для 4K и прямых трансляций на любых устройствах.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">📞</span>
-        <h3>Звонки в месенджерах</h3>
-        <p>Аудио и видео звонки*¹ в Telegram, WhatsApp, Viber, FaceTime и др. проходят стабильно.</p>
+        <h3 data-i18n="features.cardCallsTitle">Звонки в месенджерах</h3>
+        <p data-i18n="features.cardCallsText">Аудио и видео звонки*¹ в Telegram, WhatsApp, Viber, FaceTime и др. проходят стабильно.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">📸</span>
-        <h3>Instagram*²</h3>
-        <p>Публикуйте и смотрите контент без ограничений.</p>
+        <h3 data-i18n="features.cardInstagramTitle">Instagram*²</h3>
+        <p data-i18n="features.cardInstagramText">Публикуйте и смотрите контент без ограничений.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">🥷</span>
-        <h3>Скрытный трафик</h3>
-        <p>Соединение на VLESS маскируется под обычный HTTPS, поэтому блокировки его не замечают.</p>
+        <h3 data-i18n="features.cardStealthTitle">Скрытный трафик</h3>
+        <p data-i18n="features.cardStealthText">Соединение на VLESS маскируется под обычный HTTPS, поэтому блокировки его не замечают.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">📱</span>
-        <h3>Одна подписка - 4 устройства</h3>
-        <p>Одна подписка — любые четыре устройства: iPhone, Android, Mac, Windows, Linux.</p>
+        <h3 data-i18n="features.cardDevicesTitle">Одна подписка - 4 устройства</h3>
+        <p data-i18n="features.cardDevicesText">Одна подписка — любые четыре устройства: iPhone, Android, Mac, Windows, Linux.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">🔋</span>
-        <h3>Безлимитный трафик</h3>
-        <p>Никаких скрытых ограничений или резкого снижения скорости.</p>
+        <h3 data-i18n="features.cardUnlimitedTitle">Безлимитный трафик</h3>
+        <p data-i18n="features.cardUnlimitedText">Никаких скрытых ограничений или резкого снижения скорости.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">🚀</span>
-        <h3>Высокая скорость</h3>
-        <p>Оптимизированные узлы в Москве и Риге обеспечивают высокую скорость и низкую сетевую задержку.</p>
+        <h3 data-i18n="features.cardSpeedTitle">Высокая скорость</h3>
+        <p data-i18n="features.cardSpeedText">Оптимизированные узлы в Москве и Риге обеспечивают высокую скорость и низкую сетевую задержку.</p>
       </div>
       <div class="feature">
         <span class="feature-emoji" aria-hidden="true">✅</span>
-        <h3>Стабильность и поддержка</h3>
-        <p>99% аптайм и живой чат @nitro_vpn_help отвечает за пару минут.</p>
+        <h3 data-i18n="features.cardSupportTitle">Стабильность и поддержка</h3>
+        <p data-i18n="features.cardSupportText">99% аптайм и живой чат @nitro_vpn_help отвечает за пару минут.</p>
       </div>
     </div>
-    <p class="note">*¹ Для голосовых звонков VPN должен быть включён у обоих абонентов.<br>*² Instagram принадлежит Meta, признанной в России экстремистской организацией.</p>
+    <p class="note" data-i18n-html="features.note">*¹ Для голосовых звонков VPN должен быть включён у обоих абонентов.<br>*² Instagram принадлежит Meta, признанной в России экстремистской организацией.</p>
   </div>
 </section>
 
@@ -305,20 +327,20 @@
     
 <section id="protocol">
   <div class="container">
-    <h2 class="section-title">VLESS — простой ответ на вопрос «Почему у вас всё работает?»</h2>
-    <p class="muted bottom-gap-md">VLESS — это современный протокол VPN. Он делает соединение быстрым, стабильным и незаметным для провайдера, поэтому любимые сервисы остаются доступны.</p>
+    <h2 class="section-title" data-i18n="protocol.heading">VLESS — простой ответ на вопрос «Почему у вас всё работает?»</h2>
+    <p class="muted bottom-gap-md" data-i18n="protocol.subheading">VLESS — это современный протокол VPN. Он делает соединение быстрым, стабильным и незаметным для провайдера, поэтому любимые сервисы остаются доступны.</p>
     <div class="grid protocol-grid">
       <div class="card">
-        <h3 class="card-title">Что это такое</h3>
-        <p class="muted">VLESS отвечает за то, как ваше устройство подключается к VPN. Он избавлен от «лишнего веса», поэтому соединение запускается за секунды и не тормозит интернет.</p>
+        <h3 class="card-title" data-i18n="protocol.cardWhatTitle">Что это такое</h3>
+        <p class="muted" data-i18n="protocol.cardWhatText">VLESS отвечает за то, как ваше устройство подключается к VPN. Он избавлен от «лишнего веса», поэтому соединение запускается за секунды и не тормозит интернет.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Почему быстрее</h3>
-        <p class="muted">Протокол не добавляет лишних шагов при передаче данных. Видео, звонки и игры идут без провалов и подгрузок даже на нескольких устройствах сразу.</p>
+        <h3 class="card-title" data-i18n="protocol.cardFastTitle">Почему быстрее</h3>
+        <p class="muted" data-i18n="protocol.cardFastText">Протокол не добавляет лишних шагов при передаче данных. Видео, звонки и игры идут без провалов и подгрузок даже на нескольких устройствах сразу.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Почему его не блокируют</h3>
-        <p class="muted">Трафик выглядит как обычное посещение сайта. Провайдеру нечего подозревать, поэтому сервисы остаются доступны даже при жёстких ограничениях.</p>
+        <h3 class="card-title" data-i18n="protocol.cardStealthTitle">Почему его не блокируют</h3>
+        <p class="muted" data-i18n="protocol.cardStealthText">Трафик выглядит как обычное посещение сайта. Провайдеру нечего подозревать, поэтому сервисы остаются доступны даже при жёстких ограничениях.</p>
       </div>
     </div>
   </div>
@@ -327,64 +349,64 @@
 
     <section id="pricing">
   <div class="container">
-    <h2 class="section-title">Тарифы и подписки</h2>
-    <p class="muted bottom-gap-md">Гибкие планы на 1, 3, 6 и 12 месяцев. Любой тариф включает подключение до 4 устройств, безлимитный трафик и доступ к серверам в Москве и Риге.</p>
+    <h2 class="section-title" data-i18n="pricing.heading">Тарифы и подписки</h2>
+    <p class="muted bottom-gap-md" data-i18n="pricing.subheading">Гибкие планы на 1, 3, 6 и 12 месяцев. Любой тариф включает подключение до 4 устройств, безлимитный трафик и доступ к серверам в Москве и Риге.</p>
     <div class="pricing">
       <div class="plan" data-plan="1m">
-        <h3>1 месяц</h3>
-        <div class="price">150 ₽</div>
-        <div class="plan-payoff">за 30 дней</div>
+        <h3 data-i18n="pricing.plan1.title">1 месяц</h3>
+        <div class="price" data-i18n="pricing.plan1.price">150 ₽</div>
+        <div class="plan-payoff" data-i18n="pricing.plan1.payoff">за 30 дней</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+          <li data-i18n="pricing.benefit.locations"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li data-i18n="pricing.benefit.devices"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li data-i18n="pricing.benefit.speed"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li data-i18n="pricing.benefit.services"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
         </ul>
-        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select data-i18n="pricing.cta">Купить в Telegram</a></div>
       </div>
       <div class="plan" data-plan="3m">
-        <h3>3 месяца</h3>
-        <div class="price">350 ₽</div>
-        <div class="plan-payoff">за 3 месяца (~117 ₽/мес)</div>
-        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 22% vs 1 месяц</div>
+        <h3 data-i18n="pricing.plan3.title">3 месяца</h3>
+        <div class="price" data-i18n="pricing.plan3.price">350 ₽</div>
+        <div class="plan-payoff" data-i18n="pricing.plan3.payoff">за 3 месяца (~117 ₽/мес)</div>
+        <div class="plan-savings" data-i18n="pricing.plan3.savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 22% vs 1 месяц</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+          <li data-i18n="pricing.benefit.locations"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li data-i18n="pricing.benefit.devices"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li data-i18n="pricing.benefit.speed"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li data-i18n="pricing.benefit.services"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
         </ul>
-        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select data-i18n="pricing.cta">Купить в Telegram</a></div>
       </div>
       <div class="plan plan-featured" data-plan="6m">
-        <span class="badge">33% выгоды</span>
-        <h3>6 месяцев</h3>
-        <div class="price">600 ₽</div>
-        <div class="plan-payoff">за 6 месяцев (~100 ₽/мес)</div>
-        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 33% vs 1 месяц</div>
+        <span class="badge" data-i18n="pricing.plan6.badge">33% выгоды</span>
+        <h3 data-i18n="pricing.plan6.title">6 месяцев</h3>
+        <div class="price" data-i18n="pricing.plan6.price">600 ₽</div>
+        <div class="plan-payoff" data-i18n="pricing.plan6.payoff">за 6 месяцев (~100 ₽/мес)</div>
+        <div class="plan-savings" data-i18n="pricing.plan6.savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 33% vs 1 месяц</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+          <li data-i18n="pricing.benefit.locations"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li data-i18n="pricing.benefit.devices"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li data-i18n="pricing.benefit.speed"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li data-i18n="pricing.benefit.services"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
         </ul>
-        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select data-i18n="pricing.cta">Купить в Telegram</a></div>
       </div>
       <div class="plan plan-featured" data-plan="12m">
-        <span class="badge accent">Максимальная выгода</span>
-        <h3>12 месяцев</h3>
-        <div class="price">1000 ₽</div>
-        <div class="plan-payoff">за 12 месяцев (~84 ₽/мес)</div>
-        <div class="plan-savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 44% vs 1 месяц</div>
+        <span class="badge accent" data-i18n="pricing.plan12.badge">Максимальная выгода</span>
+        <h3 data-i18n="pricing.plan12.title">12 месяцев</h3>
+        <div class="price" data-i18n="pricing.plan12.price">1000 ₽</div>
+        <div class="plan-payoff" data-i18n="pricing.plan12.payoff">за 12 месяцев (~84 ₽/мес)</div>
+        <div class="plan-savings" data-i18n="pricing.plan12.savings"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Экономия 44% vs 1 месяц</div>
         <ul>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
-          <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
+          <li data-i18n="pricing.benefit.locations"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Москва 🇷🇺 / Рига 🇱🇻</li>
+          <li data-i18n="pricing.benefit.devices"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>До 4 устройств одним аккаунтом</li>
+          <li data-i18n="pricing.benefit.speed"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Безлимит и высокая скорость</li>
+          <li data-i18n="pricing.benefit.services"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="white" opacity=".9" stroke-width="2" fill="none"/></svg>Стриминги, мессенджеры и напоминание от бота</li>
         </ul>
-        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select>Купить в Telegram</a></div>
+        <div class="cta"><a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-select data-i18n="pricing.cta">Купить в Telegram</a></div>
       </div>
     </div>
-    <p class="small top-gap-sm">Оплата картами банков РФ, по СБП или через Telegram Stars. Telegram-бот напомнит о продлении за несколько дней до окончания подписки.</p>
+    <p class="small top-gap-sm" data-i18n="pricing.note">Оплата картами банков РФ, по СБП или через Telegram Stars. Telegram-бот напомнит о продлении за несколько дней до окончания подписки.</p>
   </div>
 </section>
 
@@ -393,29 +415,29 @@
     
 <section id="trial">
   <div class="container">
-    <h2 class="section-title">Пробный период — бесплатно</h2>
+    <h2 class="section-title" data-i18n="trial.heading">Пробный период — бесплатно</h2>
     <div class="grid trial-grid">
       <div class="card">
-        <p><b>Новые пользователи</b> получают <b>2 дня</b> и <b>1 ГБ</b> трафика бесплатно. Активация занимает меньше минуты в Telegram — без банковской карты.</p>
+        <p data-i18n-html="trial.lead"><b>Новые пользователи</b> получают <b>2 дня</b> и <b>1 ГБ</b> трафика бесплатно. Активация занимает меньше минуты в Telegram — без банковской карты.</p>
         <ul>
-          <li>Доступ ко всем серверам (Москва 🇷🇺 и Рига 🇱🇻)</li>
-          <li>Полная скорость для 4 устройств</li>
-          <li>Переход на любой тариф прямо в боте</li>
+          <li data-i18n="trial.list.allServers">Доступ ко всем серверам (Москва 🇷🇺 и Рига 🇱🇻)</li>
+          <li data-i18n="trial.list.speed">Полная скорость для 4 устройств</li>
+          <li data-i18n="trial.list.upgrade">Переход на любой тариф прямо в боте</li>
         </ul>
         <div class="hero-cta">
-          <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Активировать в Telegram</a>
-          <a href="#faq" class="btn">FAQ о тест-драйве</a>
+          <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-i18n="trial.ctaActivate">Активировать в Telegram</a>
+          <a href="#faq" class="btn" data-i18n="trial.ctaFaq">FAQ о тест-драйве</a>
         </div>
       </div>
       <div class="card">
-        <h3 class="card-title">Как работает тест-драйв</h3>
+        <h3 class="card-title" data-i18n="trial.stepsTitle">Как работает тест-драйв</h3>
         <ol>
-          <li>Откройте бота <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a>.</li>
-          <li>Нажмите "Старт" либо отправьте в чат /start</li>
-          <li>Выберите «Пробный период» и следуйте подсказкам.</li>
-          <li>Получите ссылку на подписку и подключите устройства.</li>
+          <li data-i18n-html="trial.steps1">Откройте бота <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a>.</li>
+          <li data-i18n="trial.steps2">Нажмите "Старт" либо отправьте в чат /start</li>
+          <li data-i18n="trial.steps3">Выберите «Пробный период» и следуйте подсказкам.</li>
+          <li data-i18n="trial.steps4">Получите ссылку на подписку и подключите устройства.</li>
         </ol>
-        <p class="small top-gap-md">Пробный период доступен один раз на пользователя, продлить можно любым платным тарифом.</p>
+        <p class="small top-gap-md" data-i18n="trial.note">Пробный период доступен один раз на пользователя, продлить можно любым платным тарифом.</p>
       </div>
     </div>
   </div>
@@ -423,100 +445,100 @@
 
 
     <section id="referral">
-      <div class="container">
-        <h2 class="section-title">Реферальная программа «Приведи друга»</h2>
-        <p class="muted bottom-gap-md">Если ваш друг оплачивает подписку — вы оба получаете дни в подарок к своей подписке.</p>
-        <div class="grid referral-grid">
-          <div class="ref-card"><b>1 месяц</b><br><span class="muted">+3 дня каждому</span></div>
-          <div class="ref-card"><b>3 месяца</b><br><span class="muted">+7 дней каждому</span></div>
-          <div class="ref-card"><b>6 месяцев</b><br><span class="muted">+15 дней каждому</span></div>
-          <div class="ref-card"><b>12 месяцев</b><br><span class="muted">+30 дней каждому</span></div>
-        </div>
-        <div class="hero-cta hero-cta--tight">
-          <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Получить реферальную ссылку</a>
-          <a href="#faq" class="btn">Условия программы</a>
-        </div>
-      </div>
-    </section>
+  <div class="container">
+    <h2 class="section-title" data-i18n="referral.heading">Реферальная программа «Приведи друга»</h2>
+    <p class="muted bottom-gap-md" data-i18n="referral.subheading">Если ваш друг оплачивает подписку — вы оба получаете дни в подарок к своей подписке.</p>
+    <div class="grid referral-grid">
+      <div class="ref-card"><b data-i18n="referral.card1.title">1 месяц</b><br><span class="muted" data-i18n="referral.card1.bonus">+3 дня каждому</span></div>
+      <div class="ref-card"><b data-i18n="referral.card3.title">3 месяца</b><br><span class="muted" data-i18n="referral.card3.bonus">+7 дней каждому</span></div>
+      <div class="ref-card"><b data-i18n="referral.card6.title">6 месяцев</b><br><span class="muted" data-i18n="referral.card6.bonus">+15 дней каждому</span></div>
+      <div class="ref-card"><b data-i18n="referral.card12.title">12 месяцев</b><br><span class="muted" data-i18n="referral.card12.bonus">+30 дней каждому</span></div>
+    </div>
+    <div class="hero-cta hero-cta--tight">
+      <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-i18n="referral.ctaPrimary">Получить реферальную ссылку</a>
+      <a href="#faq" class="btn" data-i18n="referral.ctaSecondary">Условия программы</a>
+    </div>
+  </div>
+</section>
 
     
 <section id="payments">
   <div class="container">
-    <h2 class="section-title">Оплата и быстрый доступ</h2>
-    <p class="muted bottom-gap-md">Принимаем карты банков РФ, СБП и платежи через Telegram Stars — доступ выдаётся сразу после оплаты.</p>
+    <h2 class="section-title" data-i18n="payments.heading">Оплата и быстрый доступ</h2>
+    <p class="muted bottom-gap-md" data-i18n="payments.subheading">Принимаем карты банков РФ, СБП и платежи через Telegram Stars — доступ выдаётся сразу после оплаты.</p>
     <div class="grid payments-grid">
       <div class="card">
-        <h3 class="card-title">Карты банков РФ</h3>
-        <p class="muted">Оплата привычными картами с автоматическим подтверждением.</p>
+        <h3 class="card-title" data-i18n="payments.cardCardsTitle">Карты банков РФ</h3>
+        <p class="muted" data-i18n="payments.cardCardsText">Оплата привычными картами с автоматическим подтверждением.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">СБП</h3>
-        <p class="muted">Мгновенная оплата без комиссии и переплат с вашего банковского счета.</p>
+        <h3 class="card-title" data-i18n="payments.cardSbpTitle">СБП</h3>
+        <p class="muted" data-i18n="payments.cardSbpText">Мгновенная оплата без комиссии и переплат с вашего банковского счета.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Telegram Stars</h3>
-        <p class="muted">Плати звёздами Telegram, если нет карты РФ или СБП.</p>
+        <h3 class="card-title" data-i18n="payments.cardStarsTitle">Telegram Stars</h3>
+        <p class="muted" data-i18n="payments.cardStarsText">Плати звёздами Telegram, если нет карты РФ или СБП.</p>
       </div>
     </div>
     <div class="hero-cta hero-cta--tight">
-      <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary">Перейти в Telegram-бота</a>
-      <a href="#pricing" class="btn">Сравнить тарифы</a>
+      <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" class="btn primary" data-i18n="payments.ctaPrimary">Перейти в Telegram-бота</a>
+      <a href="#pricing" class="btn" data-i18n="payments.ctaSecondary">Сравнить тарифы</a>
     </div>
   </div>
 </section>
 
 
     <section id="locations">
-      <div class="container">
-        <h2 class="section-title">Доступные локации</h2>
-        <div class="grid locations">
-          <div class="card">
-            <h3 class="card-title">Москва 🇷🇺</h3>
-            <p class="muted">Подходит для обхода ограничений в большинстве случаев, если вы в России.</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Рига 🇱🇻</h3>
-            <p class="muted">Подходит для обхода как внутренних так и внешний ограничений и санкций. </p>
-          </div>
-        </div>
+  <div class="container">
+    <h2 class="section-title" data-i18n="locations.heading">Доступные локации</h2>
+    <div class="grid locations">
+      <div class="card">
+        <h3 class="card-title" data-i18n="locations.moscowTitle">Москва 🇷🇺</h3>
+        <p class="muted" data-i18n="locations.moscowText">Подходит для обхода ограничений в большинстве случаев, если вы в России.</p>
       </div>
-    </section>
+      <div class="card">
+        <h3 class="card-title" data-i18n="locations.rigaTitle">Рига 🇱🇻</h3>
+        <p class="muted" data-i18n="locations.rigaText">Подходит для обхода как внутренних так и внешних ограничений и санкций.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="faq">
-      <div class="container">
-        <h2 class="section-title">Частые вопросы о NITRO VPN</h2>
-        <div class="grid faq">
-          <details>
-            <summary>Сколько устройств можно подключить?</summary>
-            <p>Любая подписка включает до <b>4 устройств</b> одновременно.</p>
-          </details>
-          <details>
-            <summary>Есть ли ограничения по скорости?</summary>
-            <p>Максимально возможная скорость на 1 сервер - 2 Гбит/сек, делится в равных пропорциях между всеми пользователями и искусственно не ограничивается. Реальная скорость зависит от вашего провайдера и расстояния до сервера.</p>
-          </details>
-          <details>
-            <summary>Как работает пробный период?</summary>
-            <p>2 дня и 1 ГБ трафика бесплатно. После исчерпания лимита можно перейти на любой тариф.</p>
-          </details>
-          <details>
-            <summary>Где доступен сервис?</summary>
-            <p>Сейчас доступны <b>Москва</b> и <b>Рига</b>. Мы добавляем новые локации по мере роста.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+  <div class="container">
+    <h2 class="section-title" data-i18n="faq.heading">Частые вопросы о NITRO VPN</h2>
+    <div class="grid faq">
+      <details>
+        <summary data-i18n="faq.q1">Сколько устройств можно подключить?</summary>
+        <p data-i18n-html="faq.a1">Любая подписка включает до <b>4 устройств</b> одновременно.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">Есть ли ограничения по скорости?</summary>
+        <p data-i18n="faq.a2">Максимально возможная скорость на 1 сервер — 2 Гбит/сек, делится в равных пропорциях между всеми пользователями и искусственно не ограничивается. Реальная скорость зависит от вашего провайдера и расстояния до сервера.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">Как работает пробный период?</summary>
+        <p data-i18n="faq.a3">2 дня и 1 ГБ трафика бесплатно. После исчерпания лимита можно перейти на любой тариф.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">Где доступен сервис?</summary>
+        <p data-i18n-html="faq.a4">Сейчас доступны <b>Москва</b> и <b>Рига</b>. Мы добавляем новые локации по мере роста.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
     
 <section id="cta">
   <div class="container">
     <div class="card cta-card">
       <div>
-        <h3 class="cta-heading">Готовы подключиться к NITRO VPN?</h3>
-        <p class="muted no-margin">Покупка, продление, пробный период и рефералы доступны в нашем Telegram-боте. Поддержка: <a class="support-link" href="https://t.me/nitro_vpn_help" target="_blank" rel="noopener">@nitro_vpn_help</a></p>
+        <h3 class="cta-heading" data-i18n="cta.heading">Готовы подключиться к NITRO VPN?</h3>
+        <p class="muted no-margin" data-i18n-html="cta.text">Покупка, продление, пробный период и рефералы доступны в нашем Telegram-боте. Поддержка: <a class="support-link" href="https://t.me/nitro_vpn_help" target="_blank" rel="noopener">@nitro_vpn_help</a></p>
       </div>
       <div class="hero-cta">
-        <a class="btn primary" href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">Открыть @nitro_vpn_sales_bot</a>
-        <a class="btn" href="#payments">Способы оплаты</a>
+        <a class="btn primary" href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener" data-i18n="cta.primary">Открыть @nitro_vpn_sales_bot</a>
+        <a class="btn" href="#payments" data-i18n="cta.secondary">Способы оплаты</a>
       </div>
     </div>
   </div>
@@ -526,13 +548,13 @@
 
   <footer role="contentinfo">
     <div class="container foot">
-      <div class="brand">
+      <div class="brand" data-i18n-attr="aria-label" data-i18n-attr-key="brand.aria" aria-label="NITRO VPN">
         <div class="logo" aria-hidden="true">
           🚀
         </div>
-        <span>NITRO VPN</span>
+        <span data-i18n="brand.name">NITRO VPN</span>
       </div>
-      <div>© <span id="year"></span> NITRO VPN</div>
+      <div data-i18n-html="footer.copyright">© <span id="year"></span> NITRO VPN</div>
     </div>
   </footer>
 
