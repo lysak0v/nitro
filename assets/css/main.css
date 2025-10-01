@@ -222,3 +222,12 @@
     .btn,.menu-toggle,.nav-links{transition:none}
   }
   html[dir="rtl"] .lang-select{text-align:right;direction:rtl}
+
+
+
+.features .feature,.ref-card{transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition)}
+@media (hover:hover){
+  .features .feature:hover,.features .feature:focus-visible,.features .feature:focus-within{transform:translateY(-5px);box-shadow:0 18px 32px rgba(0,0,0,.30);border-color:rgba(94,234,212,.45)}
+  .ref-card:hover,.ref-card:focus-visible,.ref-card:focus-within{transform:translateY(-5px);box-shadow:0 18px 36px rgba(147,197,253,.24);border-color:rgba(147,197,253,.45)}
+}
+.features .feature:focus-visible,.ref-card:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(94,234,212,.28)}
