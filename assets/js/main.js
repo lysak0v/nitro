@@ -197,13 +197,13 @@ const translations = {
     "meta.keywords":
       "nitro vpn,vless vpn,впн,впн россия,vpn russia,vpn латвия,vpn latvia,vpn москва,vpn moscow,vpn рига,vpn riga,быстрый vpn,stable vpn,vpn безлимит,vpn для youtube,vpn для instagram,vpn для facebook,vpn для tiktok,vpn для telegram,vpn для whatsapp,vpn для twitter,vpn для discord,vpn для viber,vpn для facetime,vpn для кинопоиск,vless protocol,обход dpi,secure vpn",
     "meta.ogLocale": "ru_RU",
-    "meta.ogTitle": "NITRO VPN — VLESS VPN для YouTube и Telegram",
+    "meta.ogTitle": "NITRO — VPN для YouTube, Instagram, TikTok, Telegram, WhatsApp и т.д.",
     "meta.ogDescription":
       "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.ogImageAlt": "Логотип NITRO VPN и интерфейс приложения",
-    "meta.twitterTitle": "NITRO VPN — VLESS VPN без блокировок",
+    "meta.twitterTitle": "NITRO — VPN для YouTube, Instagram, TikTok, Telegram, WhatsApp и т.д.",
     "meta.twitterDescription":
-      "Тест 2 дня и 1 ГБ бесплатно. YouTube, Telegram, Instagram и КиноПоиск работают без ограничений, серверы в Москве и Риге.",
+      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.twitterImageAlt": "Логотип NITRO VPN и интерфейс приложения",
     "meta.hreflang": "ru",
     "lang.label": "Выбрать язык",
@@ -413,13 +413,13 @@ const translations = {
     "meta.keywords":
       "nitro vpn,vless vpn,vpn russia,vpn moscow,vpn riga,fast vpn,unlimited vpn,vpn for youtube,vpn for telegram,vpn for instagram,vpn for whatsapp,vpn for twitter,vpn for discord,vpn bypass dpi,secure vpn",
     "meta.ogLocale": "en_US",
-    "meta.ogTitle": "NITRO VPN — VLESS VPN for YouTube and Telegram",
+    "meta.ogTitle": "NITRO — VPN for YouTube, Instagram, TikTok, Telegram, WhatsApp, etc.",
     "meta.ogDescription":
-      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "Access YouTube, Instagram, TikTok, Telegram, WhatsApp and more. Our Moscow server removes YouTube ads like Premium. Get a 2-day trial with 1 GB and unlimited access for up to 4 devices.",
     "meta.ogImageAlt": "NITRO VPN logo and app interface",
-    "meta.twitterTitle": "NITRO VPN — unblock YouTube and Telegram",
+    "meta.twitterTitle": "NITRO — VPN for YouTube, Instagram, TikTok, Telegram, WhatsApp, etc.",
     "meta.twitterDescription":
-      "Try 2 days and 1 GB for free. Fast VLESS VPN with Moscow and Riga servers, unlimited data and 4 devices included.",
+      "Access YouTube, Instagram, TikTok, Telegram, WhatsApp and more. Our Moscow server removes YouTube ads like Premium. Get a 2-day trial with 1 GB and unlimited access for up to 4 devices.",
     "meta.twitterImageAlt": "NITRO VPN logo and app interface",
     "meta.hreflang": "en",
     "lang.label": "Choose language",
@@ -627,13 +627,13 @@ const translations = {
     "meta.keywords":
       "nitro vpn,vless vpn,وی پی ان روسیه,vpn moscow,vpn riga,fast vpn,وی پی ان بدون محدودیت,vpn برای یوتیوب,vpn برای تلگرام,vpn برای اینستاگرام,vpn whatsapp,vpn twitter,vpn discord,عبور از dpi",
     "meta.ogLocale": "fa_IR",
-    "meta.ogTitle": "NITRO VPN — وی‌پی‌ان VLESS برای یوتیوب و تلگرام",
+    "meta.ogTitle": "نایترو — وی‌پی‌ان برای YouTube، Instagram، TikTok، Telegram، WhatsApp و ...",
     "meta.ogDescription":
-      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "به YouTube، Instagram، TikTok، Telegram، WhatsApp و سرویس‌های دیگر دسترسی داشته باشید. سرور مسکو تبلیغات YouTube را مثل Premium حذف می‌کند. یک دوره آزمایشی ۲ روزه با ۱ گیگابایت و دسترسی نامحدود تا ۴ دستگاه دریافت کنید.",
     "meta.ogImageAlt": "لوگوی NITRO VPN و رابط کاربری",
-    "meta.twitterTitle": "NITRO VPN — دسترسی بدون فیلتر",
+    "meta.twitterTitle": "نایترو — وی‌پی‌ان برای YouTube، Instagram، TikTok، Telegram، WhatsApp و ...",
     "meta.twitterDescription":
-      "۲ روز و ۱ گیگابایت رایگان. وی‌پی‌ان VLESS با سرورهای مسکو و ریگا، حجم نامحدود و ۴ دستگاه.",
+      "به YouTube، Instagram، TikTok، Telegram، WhatsApp و سرویس‌های دیگر دسترسی داشته باشید. سرور مسکو تبلیغات YouTube را مثل Premium حذف می‌کند. یک دوره آزمایشی ۲ روزه با ۱ گیگابایت و دسترسی نامحدود تا ۴ دستگاه دریافت کنید.",
     "meta.twitterImageAlt": "لوگوی NITRO VPN و رابط کاربری",
     "meta.hreflang": "fa",
     "lang.label": "انتخاب زبان",
@@ -832,13 +832,13 @@ const translations = {
     "meta.keywords":
       "nitro vpn,vless vpn,vpn russia,vpn moscow,vpn riga,高速vpn,无限流量vpn,vpn youtube,vpn telegram,vpn instagram,vpn whatsapp,vpn twitter,vpn discord,绕过dpi",
     "meta.ogLocale": "zh_CN",
-    "meta.ogTitle": "NITRO VPN — 解锁 YouTube 与 Telegram",
+    "meta.ogTitle": "NITRO — 适用于 YouTube、Instagram、TikTok、Telegram、WhatsApp 等的 VPN",
     "meta.ogDescription":
-      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "畅享 YouTube、Instagram、TikTok、Telegram、WhatsApp 等服务。莫斯科节点像 Premium 一样去除 YouTube 广告。提供 2 天 1GB 试用，最多支持 4 台设备不限流量。",
     "meta.ogImageAlt": "NITRO VPN 标志与界面",
-    "meta.twitterTitle": "NITRO VPN — 稳定 VLESS VPN",
+    "meta.twitterTitle": "NITRO — 适用于 YouTube、Instagram、TikTok、Telegram、WhatsApp 等的 VPN",
     "meta.twitterDescription":
-      "免费试用 2 天 1GB。莫斯科与里加节点，高速无限流量，支持 4 台设备。",
+      "畅享 YouTube、Instagram、TikTok、Telegram、WhatsApp 等服务。莫斯科节点像 Premium 一样去除 YouTube 广告。提供 2 天 1GB 试用，最多支持 4 台设备不限流量。",
     "meta.twitterImageAlt": "NITRO VPN 标志与界面",
     "meta.hreflang": "zh",
     "lang.label": "选择语言",
