@@ -9,11 +9,12 @@
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
   <link rel="canonical" href="https://nitrovpn.org/" />
   <link rel="alternate" hreflang="ru" href="https://nitrovpn.org/" data-i18n-attr="hreflang" data-i18n-attr-key="meta.hreflang" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-  <link rel="icon" href="assets/favicon/favicon.ico" />
-  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
   <meta name="format-detection" content="telephone=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="color-scheme" content="dark light" />
@@ -39,20 +40,30 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
+  "@id": "https://nitrovpn.org/#service",
   "name": "NITRO VPN",
-  "serviceType": "VPN",
+  "serviceType": "VPN access",
+  "brand": {
+    "@type": "Brand",
+    "name": "NITRO VPN"
+  },
   "url": "https://nitrovpn.org/",
-  "description": "NITRO VPN — быстрый VLESS VPN-сервис для России и Европы с серверами в Москве и Риге, пробным периодом 2 дня и 1 ГБ, безлимитным трафиком и подключением до 4 устройств.",
+  "description": "NITRO — VPN для YouTube, Instagram, TikTok, Telegram, WhatsApp и т.д. Серверы в Москве и Риге, VLESS поверх TLS, пробный период 2 дня и 1 ГБ, безлимитный трафик и до 4 устройств одним аккаунтом.",
   "provider": {
     "@type": "Organization",
     "name": "NITRO VPN",
     "url": "https://nitrovpn.org/",
+    "logo": "https://nitrovpn.org/assets/favicon/android-chrome-192x192.png",
     "sameAs": [
       "https://t.me/nitro_vpn_sales_bot",
       "https://t.me/nitro_vpn_help"
     ]
   },
   "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
     {
       "@type": "City",
       "name": "Москва",
@@ -70,6 +81,24 @@
       }
     }
   ],
+  "serviceOutput": {
+    "@type": "Service",
+    "name": "VPN конфигурации для до 4 устройств"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://t.me/nitro_vpn_sales_bot",
+    "availableLanguage": [
+      "ru",
+      "en",
+      "fa",
+      "zh"
+    ],
+    "serviceLocation": {
+      "@type": "VirtualLocation",
+      "url": "https://nitrovpn.org/"
+    }
+  },
   "offers": [
     {
       "@type": "Offer",
@@ -77,7 +106,12 @@
       "price": "150",
       "priceCurrency": "RUB",
       "availability": "https://schema.org/InStock",
-      "url": "https://t.me/nitro_vpn_sales_bot"
+      "url": "https://t.me/nitro_vpn_sales_bot",
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "MON",
+        "value": 1
+      }
     },
     {
       "@type": "Offer",
@@ -85,7 +119,12 @@
       "price": "350",
       "priceCurrency": "RUB",
       "availability": "https://schema.org/InStock",
-      "url": "https://t.me/nitro_vpn_sales_bot"
+      "url": "https://t.me/nitro_vpn_sales_bot",
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "MON",
+        "value": 3
+      }
     },
     {
       "@type": "Offer",
@@ -94,7 +133,11 @@
       "priceCurrency": "RUB",
       "availability": "https://schema.org/InStock",
       "url": "https://t.me/nitro_vpn_sales_bot",
-      "priceValidUntil": "2026-12-31"
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "MON",
+        "value": 6
+      }
     },
     {
       "@type": "Offer",
@@ -103,15 +146,21 @@
       "priceCurrency": "RUB",
       "availability": "https://schema.org/InStock",
       "url": "https://t.me/nitro_vpn_sales_bot",
-      "priceValidUntil": "2026-12-31"
+      "eligibleQuantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "MON",
+        "value": 12
+      }
     }
   ],
   "offersCatalog": {
     "@type": "OfferCatalog",
-    "name": "Гибкие тарифы",
+    "name": "Гибкие тарифы NITRO VPN",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
     "itemListElement": [
       {
         "@type": "Offer",
+        "position": 1,
         "itemOffered": {
           "@type": "Service",
           "name": "VPN доступ на 1 месяц"
@@ -119,6 +168,7 @@
       },
       {
         "@type": "Offer",
+        "position": 2,
         "itemOffered": {
           "@type": "Service",
           "name": "VPN доступ на 3 месяца"
@@ -126,6 +176,7 @@
       },
       {
         "@type": "Offer",
+        "position": 3,
         "itemOffered": {
           "@type": "Service",
           "name": "VPN доступ на 6 месяцев"
@@ -133,6 +184,7 @@
       },
       {
         "@type": "Offer",
+        "position": 4,
         "itemOffered": {
           "@type": "Service",
           "name": "VPN доступ на 12 месяцев"
@@ -140,38 +192,25 @@
       }
     ]
   },
-  "availableChannel": {
-    "@type": "ServiceChannel",
-    "serviceUrl": "https://t.me/nitro_vpn_sales_bot",
-    "servicePhone": "",
-    "availableLanguage": [
-      "ru",
-      "en"
-    ],
-    "serviceLocation": {
-      "@type": "VirtualLocation",
-      "url": "https://nitrovpn.org/"
-    }
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Приведи друга",
+    "name": "Реферальная программа NITRO VPN",
     "itemListElement": [
       {
         "@type": "Offer",
-        "name": "+3 дня за 1 месяц"
+        "name": "+3 дня каждому за рекомендацию тарифа 1 месяц"
       },
       {
         "@type": "Offer",
-        "name": "+7 дней за 3 месяца"
+        "name": "+7 дней каждому за рекомендацию тарифа 3 месяца"
       },
       {
         "@type": "Offer",
-        "name": "+15 дней за 6 месяцев"
+        "name": "+15 дней каждому за рекомендацию тарифа 6 месяцев"
       },
       {
         "@type": "Offer",
-        "name": "+30 дней за 12 месяцев"
+        "name": "+30 дней каждому за рекомендацию тарифа 12 месяцев"
       }
     ]
   }
