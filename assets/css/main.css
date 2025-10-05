@@ -91,7 +91,10 @@
   section{padding:clamp(36px,8vw,72px) 0}
   .section-title{font-size:clamp(26px,3vw,34px);margin:0 0 18px}
   .grid{display:grid;gap:clamp(18px,4vw,32px)}
-  .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;line-height:1.5;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);will-change:transform}
+  .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;line-height:1.5;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition),background var(--transition);will-change:transform}
+  .card--highlight{position:relative;background:linear-gradient(155deg, rgba(94,234,212,.22), rgba(147,197,253,.08) 55%, rgba(11,15,22,.92));border-color:rgba(94,234,212,.55);box-shadow:0 22px 46px rgba(45,212,191,.28);transform:translateY(-6px)}
+  .card--highlight::after{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(147,197,253,.18);pointer-events:none}
+  .card--highlight .card-title{color:var(--primary)}
   .cta-card{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .cta-card .hero-cta{width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
   .cta-card .btn{width:100%;flex:1 1 auto}
@@ -133,6 +136,7 @@
   .trial-grid li{margin-bottom:6px}
   @media (hover:hover){
     .card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.28);border-color:rgba(255,255,255,.14)}
+    .card--highlight:hover{transform:translateY(-10px);box-shadow:0 28px 58px rgba(45,212,191,.32);border-color:rgba(94,234,212,.7)}
     .plan:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(45,212,191,.16);border-color:rgba(94,234,212,.45)}
   }
   .plan:focus-within{border-color:rgba(94,234,212,.55);box-shadow:0 0 0 3px rgba(94,234,212,.18)}
