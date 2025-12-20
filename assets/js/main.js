@@ -304,8 +304,7 @@ const translations = {
     "features.cardSpeedText":
       "Optimised nodes in Moscow, Riga and Finland ensure high speed and low latency.",
     "features.cardUnlimitedTitle": "Unlimited traffic",
-    "features.cardUnlimitedText":
-      "No hidden limits or sudden throttling.",
+    "features.cardUnlimitedText": "No hidden limits or sudden throttling.",
     "features.cardStealthTitle": "Stealth traffic",
     "features.cardStealthText":
       "A VLESS connection looks like ordinary HTTPS, so blocks do not notice it.",
@@ -350,7 +349,8 @@ const translations = {
     "pricing.benefit.locations": "Moscow 🇷🇺 / Riga 🇱🇻 / Finland 🇫🇮",
     "pricing.benefit.devices": "Up to 4 devices per account",
     "pricing.benefit.speed": "Unlimited and high speed",
-    "pricing.benefit.services": "Streaming, messengers and reminders from the bot",
+    "pricing.benefit.services":
+      "Streaming, messengers and reminders from the bot",
     "pricing.cta": "Buy in Telegram",
     "pricing.note":
       "Pay with Russian bank cards, SBP or Telegram Stars. The Telegram bot reminds you a few days before the subscription ends.",
@@ -366,8 +366,8 @@ const translations = {
     "trial.stepsTitle": "How the test drive works",
     "trial.steps1":
       'Open the <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a> bot.',
-    "trial.steps2": "Tap \"Start\" or send /start",
-    "trial.steps3": "Select \"Trial period\" and follow the prompts.",
+    "trial.steps2": 'Tap "Start" or send /start',
+    "trial.steps3": 'Select "Trial period" and follow the prompts.',
     "trial.steps4": "Receive the subscription link and connect your devices.",
     "trial.note":
       "The trial is available once per user; extend it with any paid plan.",
@@ -391,7 +391,8 @@ const translations = {
     "payments.cardCardsText":
       "Pay with familiar cards and automatic confirmation.",
     "payments.cardSbpTitle": "SBP",
-    "payments.cardSbpText": "Instant, fee-free payments from your bank account.",
+    "payments.cardSbpText":
+      "Instant, fee-free payments from your bank account.",
     "payments.cardStarsTitle": "Telegram Stars",
     "payments.cardStarsText":
       "Pay with Telegram Stars if you don’t have a Russian card or SBP.",
@@ -464,7 +465,6 @@ const translations = {
     "schema.bonus6": "+15 days for a 6-month referral",
     "schema.bonus12": "+30 days for a 12-month referral",
   },
-
   fa: {
     "skip.link": "رفتن به محتوا",
     "brand.name": "NITRO VPN",
@@ -594,8 +594,8 @@ const translations = {
     "trial.stepsTitle": "نحوه کار تست‌درایو",
     "trial.steps1":
       'ربات <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a> را باز کنید.',
-    "trial.steps2": "دکمه \"Start\" را بزنید یا /start ارسال کنید",
-    "trial.steps3": "گزینه \"دوره آزمایشی\" را انتخاب و مراحل را دنبال کنید.",
+    "trial.steps2": 'دکمه "Start" را بزنید یا /start ارسال کنید',
+    "trial.steps3": 'گزینه "دوره آزمایشی" را انتخاب و مراحل را دنبال کنید.',
     "trial.steps4": "لینک اشتراک را بگیرید و دستگاه‌ها را وصل کنید.",
     "trial.note":
       "دوره آزمایشی برای هر کاربر فقط یک‌بار فعال می‌شود و با هر طرح پولی قابل تمدید است.",
@@ -616,8 +616,7 @@ const translations = {
     "payments.subheading":
       "کارت‌های بانکی روسیه، سامانه پرداخت سریع و Telegram Stars پذیرفته می‌شود — دسترسی بلافاصله بعد از پرداخت فعال می‌گردد.",
     "payments.cardCardsTitle": "کارت‌های بانکی روسیه",
-    "payments.cardCardsText":
-      "پرداخت با کارت‌های آشنا و تأیید خودکار.",
+    "payments.cardCardsText": "پرداخت با کارت‌های آشنا و تأیید خودکار.",
     "payments.cardSbpTitle": "سامانه پرداخت سریع",
     "payments.cardSbpText": "پرداخت فوری بدون کارمزد از حساب بانکی شما.",
     "payments.cardStarsTitle": "Telegram Stars",
@@ -713,8 +712,7 @@ const translations = {
       "NITRO VPN 适用于 ChatGPT、YouTube、TikTok、Instagram*¹、WhatsApp*¹、Telegram、Roblox 等",
     "hero.lead":
       "畅享所有常用服务，无需担心封锁与降速。连接 <b>莫斯科</b> 服务器即可像 Premium 一样移除 YouTube 广告，<b>里加</b> 与 <b>芬兰</b> 节点确保海外服务稳定可用。VLESS + TLS 以及高级 DPI 绕过同时守住速度与隐私。",
-    "hero.savings":
-      "订阅最高可省 44%，持续解锁俄罗斯与欧盟内容。",
+    "hero.savings": "订阅最高可省 44%，持续解锁俄罗斯与欧盟内容。",
     "hero.ctaPrimary": "免费体验",
     "hero.ctaPricing": "比较套餐",
     "hero.ctaTrial": "了解原理",
@@ -744,8 +742,7 @@ const translations = {
     "features.cardAiText":
       "在海外 AI 平台提问或生成图片、视频、音乐、代码等：ChatGPT、Claude、Gemini、Grok、Copilot、DeepSeek、Midjourney、Sora 等都能稳定访问。",
     "features.cardYoutubeTitle": "YouTube",
-    "features.cardYoutubeText":
-      "任意设备都能流畅播放 Shorts、视频和直播。",
+    "features.cardYoutubeText": "任意设备都能流畅播放 Shorts、视频和直播。",
     "features.cardCallsTitle": "消息应用通话",
     "features.cardCallsText":
       "Telegram、WhatsApp*¹、Viber、FaceTime 等语音/视频通话*² 一直稳定。",
@@ -759,20 +756,17 @@ const translations = {
     "features.cardDevicesText":
       "一个套餐即可同时使用四台设备：iPhone、Android、Mac、Windows、Linux。",
     "features.cardSpeedTitle": "高速连接",
-    "features.cardSpeedText":
-      "优化的莫斯科、里加与芬兰节点带来高速与低延迟。",
+    "features.cardSpeedText": "优化的莫斯科、里加与芬兰节点带来高速与低延迟。",
     "features.cardUnlimitedTitle": "无限流量",
     "features.cardUnlimitedText": "没有隐藏限制或突然降速。",
     "features.cardStealthTitle": "隐匿流量",
-    "features.cardStealthText":
-      "VLESS 连接伪装成普通 HTTPS，封锁难以察觉。",
+    "features.cardStealthText": "VLESS 连接伪装成普通 HTTPS，封锁难以察觉。",
     "features.cardSupportTitle": "稳定与支持",
     "features.cardSupportText":
       "98% 在线率，@nitro_vpn_help 实时客服数分钟内答复。",
     "features.note":
       "*¹ Instagram 与 WhatsApp 隶属 Meta，该公司在俄罗斯被定性为极端组织。<br>*² 语音通话需双方同时开启 VPN。",
-    "protocol.heading":
-      "VLESS —— 回答“为什么你们一直可用”的最好方式",
+    "protocol.heading": "VLESS —— 回答“为什么你们一直可用”的最好方式",
     "protocol.subheading":
       "VLESS 是新一代 VPN 协议，让连接快速、稳定且难以被运营商察觉，常用服务自然保持在线。",
     "protocol.cardWhatTitle": "它是什么",
@@ -814,8 +808,7 @@ const translations = {
     "trial.heading": "免费试用",
     "trial.lead":
       "<b>新用户</b> 可领取 <b>2 天</b> <b>1GB</b> 免费流量。Telegram 中 1 分钟内即可激活，无需银行卡。",
-    "trial.list.allServers":
-      "解锁全部服务器（莫斯科 🇷🇺、里加 🇱🇻、芬兰 🇫🇮）",
+    "trial.list.allServers": "解锁全部服务器（莫斯科 🇷🇺、里加 🇱🇻、芬兰 🇫🇮）",
     "trial.list.speed": "4 台设备共享满速",
     "trial.list.upgrade": "可在机器人中随时升级任意套餐",
     "trial.ctaActivate": "在 Telegram 激活",
@@ -823,8 +816,8 @@ const translations = {
     "trial.stepsTitle": "试用流程",
     "trial.steps1":
       '打开 <a href="https://t.me/nitro_vpn_sales_bot" target="_blank" rel="noopener">@nitro_vpn_sales_bot</a> 机器人。',
-    "trial.steps2": "点击 \"Start\" 或发送 /start",
-    "trial.steps3": "选择 \"试用期\" 并按照提示操作",
+    "trial.steps2": '点击 "Start" 或发送 /start',
+    "trial.steps3": '选择 "试用期" 并按照提示操作',
     "trial.steps4": "获取订阅链接并连接设备",
     "trial.note": "每位用户仅可领取一次试用，可用任何付费套餐续期。",
     "referral.heading": "邀请好友奖励",
@@ -866,7 +859,8 @@ const translations = {
     "faq.q3": "试用如何运作？",
     "faq.a3": "提供 2 天 1GB 免费流量，用完即可升级任意套餐。",
     "faq.q4": "服务覆盖哪些地区？",
-    "faq.a4": "目前拥有 <b>莫斯科</b>、<b>里加</b> 与 <b>芬兰</b> 节点，随着增长会增加更多位置。",
+    "faq.a4":
+      "目前拥有 <b>莫斯科</b>、<b>里加</b> 与 <b>芬兰</b> 节点，随着增长会增加更多位置。",
     "cta.heading": "准备好接入 NITRO VPN 吗？",
     "cta.text":
       '购买、续费、试用和邀请计划都在我们的 Telegram 机器人中。客服：<a class="support-link" href="https://t.me/nitro_vpn_help" target="_blank" rel="noopener">@nitro_vpn_help</a>',
@@ -896,8 +890,7 @@ const translations = {
     "lang.option.en": "🇺🇸 英语",
     "lang.option.fa": "🇮🇷 波斯语",
     "lang.option.zh": "🇨🇳 简体中文",
-    "toast.planSelected":
-      "已选择套餐：{plan} — {price}。请在 Telegram 付款。",
+    "toast.planSelected": "已选择套餐：{plan} — {price}。请在 Telegram 付款。",
     "schema.description":
       "NITRO VPN 是面向俄罗斯与欧洲的高速 VLESS VPN，提供莫斯科、里加、芬兰服务器，含 2 天 / 1GB 试用、无限流量以及最多 4 台设备。",
     "schema.moscow": "莫斯科",
@@ -913,7 +906,6 @@ const translations = {
     "schema.bonus6": "+15 天奖励（6 个月）",
     "schema.bonus12": "+30 天奖励（12 个月）",
   },
-
 };
 
 const planPriceCopy = {
