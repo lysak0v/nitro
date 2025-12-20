@@ -315,7 +315,7 @@ header {
   padding: 0 20px;
 }
 .hero {
-  padding: clamp(56px, 12vw, 100px) 0 32px;
+  padding-top: 20px;
 }
 .hero-grid {
   display: grid;
@@ -425,7 +425,7 @@ h1 {
   color: var(--muted);
 }
 section {
-  padding: clamp(36px, 8vw, 72px) 0;
+  padding-bottom: 40px;
 }
 .section-title {
   font-size: clamp(26px, 3vw, 34px);
@@ -918,7 +918,7 @@ html[dir="rtl"] .nav-links .btn:focus-visible::after {
 }
 @media (max-width: 720px) {
   .hero {
-    padding: 52px 0 24px;
+    padding-top: 20px;
   }
   .statline {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
