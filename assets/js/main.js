@@ -21,7 +21,7 @@ const translations = {
     "nav.payments": "Оплата",
     "nav.telegram": "Открыть в Telegram",
     "nav.telegramAria": "Открыть Telegram-бота NITRO VPN",
-    "hero.eyebrow": "Пробный период 2 дня и 1 ГБ — без карты",
+    "hero.eyebrow": "Пробный период 2 дня и 1 ГБ - без карты",
     "hero.heading":
       "NITRO VPN - для ChatGPT, YouTube, TikTok, Instagram*¹, WhatsApp*¹, Telegram, Roblox и т.д.",
     "hero.lead":
@@ -70,7 +70,7 @@ const translations = {
       "Смотрите кино, сериалы, ТВ-каналы и спорт без региональных блокировок даже находясь не в России.",
     "features.cardDevicesTitle": "Одна подписка - 4 устройства",
     "features.cardDevicesText":
-      "Одна подписка — любые четыре устройства: iPhone, Android, Mac, Windows, Linux.",
+      "Одна подписка - любые четыре устройства: iPhone, Android, Mac, Windows, Linux.",
     "features.cardSpeedTitle": "Высокая скорость",
     "features.cardSpeedText":
       "Оптимизированные узлы в Москве, Риге и Финляндии обеспечивают высокую скорость и низкую сетевую задержку.",
@@ -86,9 +86,9 @@ const translations = {
     "features.note":
       "*¹ Instagram и WhatsApp принадлежат Meta, признанной в России экстремистской организацией.<br>*² Для голосовых звонков VPN должен быть включён у обоих абонентов..",
     "protocol.heading":
-      "VLESS — простой ответ на вопрос «Почему у вас всё работает?»",
+      "VLESS - простой ответ на вопрос «Почему у вас всё работает?»",
     "protocol.subheading":
-      "VLESS — это современный протокол VPN. Он делает соединение быстрым, стабильным и незаметным для провайдера, поэтому любимые сервисы остаются доступны.",
+      "VLESS - это современный протокол VPN. Он делает соединение быстрым, стабильным и незаметным для провайдера, поэтому любимые сервисы остаются доступны.",
     "protocol.cardWhatTitle": "Что это такое",
     "protocol.cardWhatText":
       "VLESS отвечает за то, как ваше устройство подключается к VPN. Он избавлен от «лишнего веса», поэтому соединение запускается за секунды и не тормозит интернет.",
@@ -125,9 +125,9 @@ const translations = {
     "pricing.cta": "Купить в Telegram",
     "pricing.note":
       "Оплата картами банков РФ, по СБП или через Telegram Stars. Telegram-бот напомнит о продлении за несколько дней до окончания подписки.",
-    "trial.heading": "Пробный период — бесплатно",
+    "trial.heading": "Пробный период - бесплатно",
     "trial.lead":
-      "<b>Новые пользователи</b> получают <b>2 дня</b> и <b>1 ГБ</b> трафика бесплатно. Активация занимает меньше минуты в Telegram — без банковской карты.",
+      "<b>Новые пользователи</b> получают <b>2 дня</b> и <b>1 ГБ</b> трафика бесплатно. Активация занимает меньше минуты в Telegram - без банковской карты.",
     "trial.list.allServers":
       "Доступ ко всем серверам (Москва 🇷🇺, Рига 🇱🇻 и Финляндия 🇫🇮)",
     "trial.list.speed": "Полная скорость для 4 устройств",
@@ -144,7 +144,7 @@ const translations = {
       "Пробный период доступен один раз на пользователя, продлить можно любым платным тарифом.",
     "referral.heading": "Реферальная программа «Приведи друга»",
     "referral.subheading":
-      "Если ваш друг оплачивает подписку — вы оба получаете дни в подарок к своей подписке.",
+      "Если ваш друг оплачивает подписку - вы оба получаете дни в подарок к своей подписке.",
     "referral.card1.title": "1 месяц",
     "referral.card1.bonus": "+3 дня каждому",
     "referral.card3.title": "3 месяца",
@@ -157,7 +157,7 @@ const translations = {
     "referral.ctaSecondary": "Условия программы",
     "payments.heading": "Оплата и быстрый доступ",
     "payments.subheading":
-      "Принимаем карты банков РФ, СБП и платежи через Telegram Stars — доступ выдаётся сразу после оплаты.",
+      "Принимаем карты банков РФ, СБП и платежи через Telegram Stars - доступ выдаётся сразу после оплаты.",
     "payments.cardCardsTitle": "Карты банков РФ",
     "payments.cardCardsText":
       "Оплата привычными картами с автоматическим подтверждением.",
@@ -184,7 +184,7 @@ const translations = {
     "faq.a1": "Любая подписка включает до <b>4 устройств</b> одновременно.",
     "faq.q2": "Есть ли ограничения по скорости?",
     "faq.a2":
-      "Максимально возможная скорость на 1 сервер — 2 Гбит/сек, делится в равных пропорциях между всеми пользователями и искусственно не ограничивается. Реальная скорость зависит от вашего провайдера и расстояния до сервера.",
+      "Максимально возможная скорость на 1 сервер - 2 Гбит/сек, делится в равных пропорциях между всеми пользователями и искусственно не ограничивается. Реальная скорость зависит от вашего провайдера и расстояния до сервера.",
     "faq.q3": "Как работает пробный период?",
     "faq.a3":
       "2 дня и 1 ГБ трафика бесплатно. После исчерпания лимита можно перейти на любой тариф.",
@@ -198,19 +198,19 @@ const translations = {
     "cta.secondary": "Способы оплаты",
     "footer.copyright": '© <span id="year"></span> NITRO VPN',
     "meta.title":
-      "NITRO — VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
     "meta.description":
       "Доступ к YouTube, Instagram*¹, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.keywords":
       "nitro vpn,vless vpn,впн,впн россия,vpn russia,vpn латвия,vpn latvia,vpn финляндия,vpn finland,vpn москва,vpn moscow,vpn рига,vpn riga,vpn хельсинки,vpn helsinki,быстрый vpn,stable vpn,vpn безлимит,vpn для youtube,vpn для instagram,vpn для facebook,vpn для tiktok,vpn для telegram,vpn для WhatsApp*¹,vpn для twitter,vpn для discord,vpn для viber,vpn для facetime,vpn для кинопоиск,vless protocol,обход dpi,secure vpn",
     "meta.ogLocale": "ru_RU",
     "meta.ogTitle":
-      "NITRO — VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
     "meta.ogDescription":
       "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.ogImageAlt": "Логотип NITRO VPN и интерфейс приложения",
     "meta.twitterTitle":
-      "NITRO — VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
     "meta.twitterDescription":
       "Доступ к YouTube, Instagram*¹, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.twitterImageAlt": "Логотип NITRO VPN и интерфейс приложения",
@@ -220,9 +220,9 @@ const translations = {
     "lang.option.en": "🇺🇸 English",
     "lang.option.fa": "🇮🇷 فارسی",
     "lang.option.zh": "🇨🇳 简体中文",
-    "toast.planSelected": "Выбран тариф: {plan} — {price}. Оплата в Telegram.",
+    "toast.planSelected": "Выбран тариф: {plan} - {price}. Оплата в Telegram.",
     "schema.description":
-      "NITRO VPN — быстрый VLESS VPN-сервис для России и Европы с серверами в Москве, Риге и Финляндии, пробным периодом 2 дня и 1 ГБ, безлимитным трафиком и подключением до 4 устройств.",
+      "NITRO VPN - быстрый VLESS VPN-сервис для России и Европы с серверами в Москве, Риге и Финляндии, пробным периодом 2 дня и 1 ГБ, безлимитным трафиком и подключением до 4 устройств.",
     "schema.moscow": "Москва",
     "schema.riga": "Рига",
     "schema.finland": "Хельсинки",
@@ -250,7 +250,7 @@ const translations = {
     "nav.payments": "Payments",
     "nav.telegram": "Open in Telegram",
     "nav.telegramAria": "Open the NITRO VPN Telegram bot",
-    "hero.eyebrow": "2-day trial and 1 GB — no card required",
+    "hero.eyebrow": "2-day trial and 1 GB - no card required",
     "hero.heading":
       "NITRO VPN for ChatGPT, YouTube, TikTok, Instagram*¹, WhatsApp*¹, Telegram, Roblox, etc.",
     "hero.lead":
@@ -297,7 +297,7 @@ const translations = {
     "features.cardCinemaTitle": "KinoPoisk",
     "features.cardCinemaText":
       "Watch movies, series, TV channels and sports without regional blocks even when you are abroad.",
-    "features.cardDevicesTitle": "One subscription — 4 devices",
+    "features.cardDevicesTitle": "One subscription - 4 devices",
     "features.cardDevicesText":
       "Cover any four devices with one subscription: iPhone, Android, Mac, Windows and Linux.",
     "features.cardSpeedTitle": "High speed",
@@ -314,7 +314,7 @@ const translations = {
     "features.note":
       "*¹ Instagram and WhatsApp belong to Meta, recognised in Russia as an extremist organisation.<br>*² VPN must be enabled for both participants during voice calls.",
     "protocol.heading":
-      "VLESS — a simple answer to the question “Why does everything work for you?”",
+      "VLESS - a simple answer to the question “Why does everything work for you?”",
     "protocol.subheading":
       "VLESS is a modern VPN protocol. It keeps the connection fast, stable and invisible to providers so your favourite services stay available.",
     "protocol.cardWhatTitle": "What it is",
@@ -356,7 +356,7 @@ const translations = {
       "Pay with Russian bank cards, SBP or Telegram Stars. The Telegram bot reminds you a few days before the subscription ends.",
     "trial.heading": "Free trial",
     "trial.lead":
-      "<b>New users</b> get <b>2 days</b> and <b>1 GB</b> of traffic for free. Activation takes under a minute in Telegram — no bank card required.",
+      "<b>New users</b> get <b>2 days</b> and <b>1 GB</b> of traffic for free. Activation takes under a minute in Telegram - no bank card required.",
     "trial.list.allServers":
       "Access to all servers (Moscow 🇷🇺, Riga 🇱🇻 and Finland 🇫🇮)",
     "trial.list.speed": "Full speed for 4 devices",
@@ -386,7 +386,7 @@ const translations = {
     "referral.ctaSecondary": "Program terms",
     "payments.heading": "Payments and fast access",
     "payments.subheading":
-      "We accept Russian bank cards, SBP and Telegram Stars — access is granted immediately after payment.",
+      "We accept Russian bank cards, SBP and Telegram Stars - access is granted immediately after payment.",
     "payments.cardCardsTitle": "Russian bank cards",
     "payments.cardCardsText":
       "Pay with familiar cards and automatic confirmation.",
@@ -427,19 +427,19 @@ const translations = {
     "cta.secondary": "Payment methods",
     "footer.copyright": '© <span id="year"></span> NITRO VPN',
     "meta.title":
-      "NITRO — VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
+      "NITRO - VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
     "meta.description":
       "Access YouTube, Instagram*¹, TikTok, Telegram and WhatsApp*¹, etc. The Moscow server removes YouTube ads like Premium, and nodes in Riga and Finland deliver stable access to EU content. 2-day / 1 GB trial. Unlimited access for up to 4 devices.",
     "meta.keywords":
       "nitro vpn,vless vpn,vpn,vpn russia,vpn latvia,vpn finland,vpn moscow,vpn riga,vpn helsinki,fast vpn,stable vpn,unlimited vpn,vpn for youtube,vpn for instagram,vpn for facebook,vpn for tiktok,vpn for telegram,vpn for WhatsApp*¹,vpn for twitter,vpn for discord,vpn for viber,vpn for facetime,vpn for kinopoisk,vless protocol,dpi bypass,secure vpn",
     "meta.ogLocale": "en_US",
     "meta.ogTitle":
-      "NITRO — VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
+      "NITRO - VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
     "meta.ogDescription":
       "Access YouTube, Instagram*¹, TikTok, Telegram and WhatsApp*¹, etc. The Moscow server removes YouTube ads like Premium, and Riga plus Finland locations ensure stable access to EU content. 2-day trial with 1 GB. Unlimited traffic for up to 4 devices.",
     "meta.ogImageAlt": "NITRO VPN logo and app interface",
     "meta.twitterTitle":
-      "NITRO — VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
+      "NITRO - VPN for YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹, etc.",
     "meta.twitterDescription":
       "Access YouTube, Instagram*¹, TikTok, Telegram and WhatsApp*¹, etc. The Moscow server removes YouTube ads like Premium, and Riga plus Finland locations ensure stable access to EU content. 2-day trial with 1 GB. Unlimited traffic for up to 4 devices.",
     "meta.twitterImageAlt": "NITRO VPN logo and app interface",
@@ -449,7 +449,7 @@ const translations = {
     "lang.option.en": "🇺🇸 English",
     "lang.option.fa": "🇮🇷 Persian",
     "lang.option.zh": "🇨🇳 Chinese",
-    "toast.planSelected": "Selected plan: {plan} — {price}. Pay in Telegram.",
+    "toast.planSelected": "Selected plan: {plan} - {price}. Pay in Telegram.",
     "schema.description":
       "NITRO VPN is a fast VLESS VPN service for Russia and Europe with servers in Moscow, Riga and Finland, a 2-day / 1 GB trial, unlimited traffic and up to 4 devices.",
     "schema.moscow": "Moscow",
@@ -479,7 +479,7 @@ const translations = {
     "nav.payments": "پرداخت",
     "nav.telegram": "باز کردن در تلگرام",
     "nav.telegramAria": "باز کردن ربات تلگرام NITRO VPN",
-    "hero.eyebrow": "۲ روز آزمایشی و ۱ گیگابایت — بدون نیاز به کارت بانکی",
+    "hero.eyebrow": "۲ روز آزمایشی و ۱ گیگابایت - بدون نیاز به کارت بانکی",
     "hero.heading":
       "NITRO VPN برای ChatGPT، YouTube، TikTok، Instagram*¹، WhatsApp*¹، Telegram، Roblox و ...",
     "hero.lead":
@@ -526,7 +526,7 @@ const translations = {
     "features.cardCinemaTitle": "KinoPoisk",
     "features.cardCinemaText":
       "فیلم، سریال، شبکه‌های تلویزیونی و ورزش را حتی بیرون از روسیه بدون محدودیت جغرافیایی ببینید.",
-    "features.cardDevicesTitle": "یک اشتراک — ۴ دستگاه",
+    "features.cardDevicesTitle": "یک اشتراک - ۴ دستگاه",
     "features.cardDevicesText":
       "یک اشتراک برای هر چهار دستگاه: آیفون، اندروید، مک، ویندوز و لینوکس.",
     "features.cardSpeedTitle": "سرعت بالا",
@@ -543,7 +543,7 @@ const translations = {
     "features.note":
       "*¹ Instagram و WhatsApp متعلق به Meta هستند که در روسیه سازمان افراطی شناخته می‌شود.<br>*² برای تماس صوتی باید VPN برای هر دو طرف روشن باشد.",
     "protocol.heading":
-      "VLESS — پاسخ ساده به این سؤال که «چرا همه‌چیز برای شما کار می‌کند؟»",
+      "VLESS - پاسخ ساده به این سؤال که «چرا همه‌چیز برای شما کار می‌کند؟»",
     "protocol.subheading":
       "VLESS یک پروتکل مدرن VPN است. اتصال را سریع، پایدار و برای اپراتور نامرئی می‌کند تا سرویس‌های محبوب دردسترس بماند.",
     "protocol.cardWhatTitle": "VLESS چیست",
@@ -584,7 +584,7 @@ const translations = {
       "پرداخت با کارت‌های بانکی روسیه، سامانه پرداخت سریع یا Telegram Stars. ربات چند روز قبل از پایان اشتراک یادآوری می‌کند.",
     "trial.heading": "دوره آزمایشی رایگان",
     "trial.lead":
-      "<b>کاربران جدید</b> <b>۲ روز</b> و <b>۱ گیگابایت</b> ترافیک رایگان می‌گیرند. فعال‌سازی کمتر از یک دقیقه در تلگرام زمان می‌برد — بدون کارت بانکی.",
+      "<b>کاربران جدید</b> <b>۲ روز</b> و <b>۱ گیگابایت</b> ترافیک رایگان می‌گیرند. فعال‌سازی کمتر از یک دقیقه در تلگرام زمان می‌برد - بدون کارت بانکی.",
     "trial.list.allServers":
       "دسترسی به همه سرورها (مسکو 🇷🇺، ریگا 🇱🇻 و فنلاند 🇫🇮)",
     "trial.list.speed": "حداکثر سرعت برای ۴ دستگاه",
@@ -614,7 +614,7 @@ const translations = {
     "referral.ctaSecondary": "شرایط برنامه",
     "payments.heading": "پرداخت و دسترسی سریع",
     "payments.subheading":
-      "کارت‌های بانکی روسیه، سامانه پرداخت سریع و Telegram Stars پذیرفته می‌شود — دسترسی بلافاصله بعد از پرداخت فعال می‌گردد.",
+      "کارت‌های بانکی روسیه، سامانه پرداخت سریع و Telegram Stars پذیرفته می‌شود - دسترسی بلافاصله بعد از پرداخت فعال می‌گردد.",
     "payments.cardCardsTitle": "کارت‌های بانکی روسیه",
     "payments.cardCardsText": "پرداخت با کارت‌های آشنا و تأیید خودکار.",
     "payments.cardSbpTitle": "سامانه پرداخت سریع",
@@ -653,19 +653,19 @@ const translations = {
     "cta.secondary": "روش‌های پرداخت",
     "footer.copyright": '© <span id="year"></span> NITRO VPN',
     "meta.title":
-      "NITRO — وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
+      "NITRO - وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
     "meta.description":
       "به YouTube، Instagram*¹، TikTok، Telegram و WhatsApp*¹ و دیگر سرویس‌ها دسترسی داشته باشید. سرور مسکو تبلیغات YouTube را مثل Premium حذف می‌کند و نودهای ریگا و فنلاند دسترسی پایدار به محتوای اتحادیه اروپا می‌دهند. دوره آزمایشی ۲ روزه و ۱ گیگابایتی، ترافیک نامحدود و تا ۴ دستگاه.",
     "meta.keywords":
       "nitro vpn,vless vpn,وی‌پی‌ان,وی‌پی‌ان روسیه,vpn latvia,vpn finland,vpn moscow,vpn riga,vpn helsinki,وی‌پی‌ان سریع,وی‌پی‌ان پایدار,وی‌پی‌ان نامحدود,vpn برای youtube,vpn برای instagram,vpn برای tiktok,vpn برای telegram,vpn برای WhatsApp*¹,vpn برای twitter,vpn برای discord,vpn برای viber,vpn برای facetime,vpn برای kinopoisk,vless protocol,عبور dpi,secure vpn",
     "meta.ogLocale": "fa_IR",
     "meta.ogTitle":
-      "نایترو — وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
+      "نایترو - وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
     "meta.ogDescription":
       "به YouTube، Instagram*¹، TikTok، Telegram و WhatsApp*¹ و دیگر سرویس‌ها دسترسی پیدا کنید. سرور مسکو تبلیغات YouTube را مثل Premium حذف می‌کند و لوکیشن‌های ریگا و فنلاند دسترسی پایدار به محتوای اروپایی می‌دهند. دوره آزمایشی ۲ روزه با ۱ گیگابایت و ترافیک نامحدود برای تا ۴ دستگاه.",
     "meta.ogImageAlt": "لوگوی NITRO VPN و رابط کاربری",
     "meta.twitterTitle":
-      "نایترو — وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
+      "نایترو - وی‌پی‌ان برای YouTube، Instagram*¹، TikTok، Telegram، WhatsApp*¹ و ...",
     "meta.twitterDescription":
       "به YouTube، Instagram*¹، TikTok، Telegram و WhatsApp*¹ و دیگر سرویس‌ها دسترسی پیدا کنید. سرور مسکو تبلیغات YouTube را مثل Premium حذف می‌کند و لوکیشن‌های ریگا و فنلاند دسترسی پایدار به محتوای اروپایی می‌دهند. دوره آزمایشی ۲ روزه با ۱ گیگابایت و ترافیک نامحدود برای تا ۴ دستگاه.",
     "meta.twitterImageAlt": "لوگوی NITRO VPN و رابط کاربری",
@@ -676,7 +676,7 @@ const translations = {
     "lang.option.fa": "🇮🇷 فارسی",
     "lang.option.zh": "🇨🇳 چینی",
     "toast.planSelected":
-      "طرح انتخاب‌شده: {plan} — {price}. پرداخت در تلگرام انجام می‌شود.",
+      "طرح انتخاب‌شده: {plan} - {price}. پرداخت در تلگرام انجام می‌شود.",
     "schema.description":
       "NITRO VPN یک سرویس سریع مبتنی بر VLESS برای روسیه و اروپا با سرورهای مسکو، ریگا و فنلاند، دوره آزمایشی ۲ روزه/۱ گیگابایتی، ترافیک نامحدود و تا ۴ دستگاه است.",
     "schema.moscow": "مسکو",
@@ -766,7 +766,7 @@ const translations = {
       "98% 在线率，@nitro_vpn_help 实时客服数分钟内答复。",
     "features.note":
       "*¹ Instagram 与 WhatsApp 隶属 Meta，该公司在俄罗斯被定性为极端组织。<br>*² 语音通话需双方同时开启 VPN。",
-    "protocol.heading": "VLESS —— 回答“为什么你们一直可用”的最好方式",
+    "protocol.heading": "VLESS -- 回答“为什么你们一直可用”的最好方式",
     "protocol.subheading":
       "VLESS 是新一代 VPN 协议，让连接快速、稳定且难以被运营商察觉，常用服务自然保持在线。",
     "protocol.cardWhatTitle": "它是什么",
@@ -868,19 +868,19 @@ const translations = {
     "cta.secondary": "支付方式",
     "footer.copyright": '© <span id="year"></span> NITRO VPN',
     "meta.title":
-      "NITRO — 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
+      "NITRO - 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
     "meta.description":
       "畅享 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等服务。莫斯科服务器能像 Premium 一样移除 YouTube 广告，里加与芬兰节点提供稳定的欧盟访问。含 2 天 / 1GB 试用、不限流量、最多 4 台设备。",
     "meta.keywords":
       "nitro vpn,vless vpn,vpn,vpn russia,vpn latvia,vpn finland,vpn moscow,vpn riga,vpn helsinki,高速 vpn,稳定 vpn,无限流量 vpn,vpn youtube,vpn instagram,vpn tiktok,vpn telegram,vpn WhatsApp*¹,vpn twitter,vpn discord,vpn viber,vpn facetime,vpn kinopoisk,vless protocol,绕过 dpi,secure vpn",
     "meta.ogLocale": "zh_CN",
     "meta.ogTitle":
-      "NITRO — 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
+      "NITRO - 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
     "meta.ogDescription":
       "畅享 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等服务。莫斯科服务器像 Premium 一样去广告，里加与芬兰节点保持低延迟。2 天 1GB 试用，不限流量，可连接 4 台设备。",
     "meta.ogImageAlt": "NITRO VPN 标志与界面",
     "meta.twitterTitle":
-      "NITRO — 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
+      "NITRO - 适用于 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等的 VPN",
     "meta.twitterDescription":
       "畅享 YouTube、Instagram*¹、TikTok、Telegram、WhatsApp*¹ 等服务。莫斯科服务器像 Premium 一样去广告，里加与芬兰节点保持低延迟。2 天 1GB 试用，不限流量，可连接 4 台设备。",
     "meta.twitterImageAlt": "NITRO VPN 标志与界面",
@@ -890,7 +890,7 @@ const translations = {
     "lang.option.en": "🇺🇸 英语",
     "lang.option.fa": "🇮🇷 波斯语",
     "lang.option.zh": "🇨🇳 简体中文",
-    "toast.planSelected": "已选择套餐：{plan} — {price}。请在 Telegram 付款。",
+    "toast.planSelected": "已选择套餐：{plan} - {price}。请在 Telegram 付款。",
     "schema.description":
       "NITRO VPN 是面向俄罗斯与欧洲的高速 VLESS VPN，提供莫斯科、里加、芬兰服务器，含 2 天 / 1GB 试用、无限流量以及最多 4 台设备。",
     "schema.moscow": "莫斯科",
@@ -936,10 +936,10 @@ const planPriceCopy = {
 };
 
 const toastMessages = {
-  ru: "Выбран тариф: {plan} — {price}. Оплата в Telegram.",
-  en: "Selected plan: {plan} — {price}. Please pay in Telegram.",
-  fa: "طرح انتخاب شده: {plan} — {price}. پرداخت در تلگرام انجام می‌شود.",
-  zh: "已选择套餐：{plan} — {price}。请在 Telegram 完成支付。",
+  ru: "Выбран тариф: {plan} - {price}. Оплата в Telegram.",
+  en: "Selected plan: {plan} - {price}. Please pay in Telegram.",
+  fa: "طرح انتخاب شده: {plan} - {price}. پرداخت در تلگرام انجام می‌شود.",
+  zh: "已选择套餐：{plan} - {price}。请在 Telegram 完成支付。",
 };
 
 const storageKey = "nitro-lang";
