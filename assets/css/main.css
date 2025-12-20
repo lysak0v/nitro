@@ -30,27 +30,14 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter,
     "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: radial-gradient(
-      circle at 18% 18%,
-      rgba(94, 234, 212, 0.12) 0,
-      rgba(15, 23, 42, 0) 55%
-    ),
-    radial-gradient(
-      circle at 82% 12%,
-      rgba(147, 197, 253, 0.14) 0,
-      rgba(12, 18, 31, 0) 52%
-    ),
-    radial-gradient(
-      circle at 20% 85%,
-      rgba(45, 212, 191, 0.1) 0,
-      rgba(12, 18, 31, 0) 58%
-    ),
-    radial-gradient(
-      circle at 82% 78%,
-      rgba(30, 64, 175, 0.12) 0,
-      rgba(12, 18, 31, 0) 60%
-    ),
-    linear-gradient(180deg, #0b0f16 0%, #0d1320 42%, #111b2e 100%);
+  background: linear-gradient(
+    0deg,
+    #05070d 0%,
+
+    #0d1f3a 60%,
+
+    #05070d 100%
+  );
   color: var(--text);
   line-height: 1.55;
   letter-spacing: 0.1px;
@@ -787,21 +774,6 @@ html[dir="rtl"] .nav-links .btn:focus-visible::after {
     position: fixed;
     inset: -15%;
     z-index: 0;
-    background: radial-gradient(
-        circle at 20% 40%,
-        rgba(94, 234, 212, 0.18),
-        transparent 55%
-      ),
-      radial-gradient(
-        circle at 78% 18%,
-        rgba(147, 197, 253, 0.18),
-        transparent 60%
-      ),
-      radial-gradient(
-        circle at 60% 88%,
-        rgba(45, 212, 191, 0.16),
-        transparent 70%
-      );
     pointer-events: none;
     animation: mobileGlow 26s ease-in-out infinite;
     will-change: transform, opacity;
@@ -863,37 +835,6 @@ html[dir="rtl"] .nav-links .btn:focus-visible::after {
   .trial-grid > *,
   .protocol-grid > * {
     animation: none !important;
-  }
-}
-@media (max-width: 1200px) {
-  body {
-    background: radial-gradient(
-        120vw 90vh at 85% -20%,
-        rgba(93, 188, 255, 0.1),
-        transparent 60%
-      ),
-      radial-gradient(
-        130vw 110vh at -15% 32%,
-        rgba(94, 234, 212, 0.1),
-        transparent 65%
-      ),
-      var(--bg);
-  }
-}
-
-@media (max-width: 720px) {
-  body {
-    background: radial-gradient(
-        160vw 120vh at 70% -30%,
-        rgba(93, 188, 255, 0.12),
-        transparent 68%
-      ),
-      radial-gradient(
-        170vw 130vh at -20% 38%,
-        rgba(94, 234, 212, 0.12),
-        transparent 70%
-      ),
-      var(--bg);
   }
 }
 
