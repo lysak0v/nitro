@@ -198,21 +198,21 @@ const translations = {
     "cta.secondary": "Способы оплаты",
     "footer.copyright": '© <span id="year"></span> NITRO VPN',
     "meta.title":
-      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO VPN - для ChatGPT, YouTube, TikTok, Instagram, WhatsApp, Telegram, Roblox и т.д.",
     "meta.description":
-      "Доступ к YouTube, Instagram*¹, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "VPN для ChatGPT, YouTube, Instagram, TikTok, Telegram и WhatsApp, Roblox и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к зарубежным сервисам. Бесплатный пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.keywords":
-      "nitro vpn,vless vpn,впн,впн россия,vpn russia,vpn латвия,vpn latvia,vpn финляндия,vpn finland,vpn москва,vpn moscow,vpn рига,vpn riga,vpn хельсинки,vpn helsinki,быстрый vpn,stable vpn,vpn безлимит,vpn для youtube,vpn для instagram,vpn для facebook,vpn для tiktok,vpn для telegram,vpn для WhatsApp*¹,vpn для twitter,vpn для discord,vpn для viber,vpn для facetime,vpn для кинопоиск,vless protocol,обход dpi,secure vpn",
+      "nitro vpn,нитро впн,впн,скачать впн,бесплатный впн,vpn,впн на пк,впн скачать бесплатно,скачать впн на пк,скачать vpn,бесплатный vpn,лучший впн,vpn скачать бесплатно,vpn для компьютера",
     "meta.ogLocale": "ru_RU",
     "meta.ogTitle":
-      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO - VPN для YouTube, Instagram, TikTok, Telegram, WhatsApp и т.д.",
     "meta.ogDescription":
-      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.ogImageAlt": "Логотип NITRO VPN и интерфейс приложения",
     "meta.twitterTitle":
-      "NITRO - VPN для YouTube, Instagram*¹, TikTok, Telegram, WhatsApp*¹ и т.д.",
+      "NITRO - VPN для YouTube, Instagram, TikTok, Telegram, WhatsApp и т.д.",
     "meta.twitterDescription":
-      "Доступ к YouTube, Instagram*¹, TikTok, Telegram и WhatsApp*¹ и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
+      "Доступ к YouTube, Instagram, TikTok, Telegram и WhatsApp и т.д. Сервер в Москве убирает рекламу YouTube как Premium, а локации в Риге и Финляндии дают стабильный доступ к контенту из ЕС. Пробный период 2 дня и 1 ГБ. Безлимит до 4х устройств.",
     "meta.twitterImageAlt": "Логотип NITRO VPN и интерфейс приложения",
     "meta.hreflang": "ru",
     "lang.label": "Выбрать язык",

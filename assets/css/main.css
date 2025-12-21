@@ -63,6 +63,10 @@ button:focus-visible {
   box-shadow: var(--focus);
   border-radius: 12px;
 }
+.meta-keywords {
+  font-size: 1px;
+  color: #000;
+}
 .skip-link {
   position: absolute;
   left: -10000px;
